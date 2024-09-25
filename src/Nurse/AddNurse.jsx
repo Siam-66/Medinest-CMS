@@ -1,10 +1,29 @@
 import { useFormik } from "formik";
 import CustomInput from "../CustomInput";
-
+import CustomSelect from "../CustomSelect";
 
 const AddNurse = () => {
     
+    const category = [
+        { value: 'Allergists', label: 'Allergists' },
+      
+       
+      ]
 
+      const dName = [
+        { value: 'Sakib', label: 'Sakib' },
+        { value: 'Jamil', label: 'Jamil' },
+        { value: 'Nahid', label: 'Nahid' },
+        { value: 'Shariar', label: 'Shariar' },
+        { value: 'Siam', label: 'Siam' },
+
+      ]
+  
+      const gender = [
+        { value: 'Male ', label: 'Male ' },
+        { value: 'Female ', label: 'Female ' },
+        { value: 'Others', label: 'Others' }
+    ]
 
     const formik = useFormik({
         initialValues: {
@@ -13,6 +32,9 @@ const AddNurse = () => {
             password: '',
             address: '',
             phone: '',
+            department :null,
+            doctor :null,
+            sex :null,
 
           
         },
@@ -36,8 +58,15 @@ const AddNurse = () => {
                 errors.phone = 'Required';
             }
             
-
-
+            if (!values.department) {
+                errors.department = 'Required';
+            }
+            if (!values.doctor) {
+                errors.doctor = 'Required';
+            }
+            if (!values.sex) {
+                errors.sex = 'Required';
+            }
 
 
             return errors;
@@ -100,7 +129,7 @@ const AddNurse = () => {
                     </div>
 
                         {/* Phone */}
-                        <div className="form-control flex flex-row items-center gap-4   ">
+                        <div className="form-control flex flex-row items-center gap-4 mb-5  ">
                         <label className="mb-2 w-40 text-right" htmlFor="phone">
                             Phone
                         </label>
@@ -110,6 +139,49 @@ const AddNurse = () => {
                         )}
                     </div>
 
+                        {/*Sex*/}
+
+                        <div className="form-control flex flex-row items-center gap-4 mb-5">
+                    <label className="mb-2 w-40 text-right" htmlFor="sex">
+                        Sex
+                        </label>
+                    <CustomSelect
+                            id="sex"
+                            name="sex"
+                            onChange={(selectedOption) => formik.setFieldValue("sex", selectedOption)}
+                            value={formik.values.sex}
+                            options={gender}
+                        />
+                        </div>
+
+                        {/*department*/}
+
+                        <div className="form-control flex flex-row items-center gap-4 mb-5">
+                    <label className="mb-2 w-40 text-right" htmlFor="department">
+                        Department
+                        </label>
+                    <CustomSelect
+                            id="department"
+                            name="department"
+                            onChange={(selectedOption) => formik.setFieldValue("department", selectedOption)}
+                            value={formik.values.department}
+                            options={category}
+                        />
+                        </div>
+
+                    {/* Doctor */}
+                    <div className="form-control flex flex-row items-center mb-5 gap-4  ">
+                    <label className="mb-2 w-40 text-right" htmlFor="doctor">
+                    Doctor  
+                        </label>
+                    <CustomSelect
+                            id="doctor"
+                            name="doctor"
+                            onChange={(selectedOption) => formik.setFieldValue("doctor", selectedOption)}
+                            value={formik.values.doctor}
+                            options={dName}
+                        />
+                        </div>
 
 
 

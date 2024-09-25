@@ -176,7 +176,7 @@ const Addpatient = () => {
                         )}
                     </div>
                     {/* Blood Group */}
-                    <div className="form-control flex flex-row items-center gap-4 ">
+                    <div className="form-control flex flex-row items-center gap-4 ml-[25px] ">
                     <label className="mb-2 w-40 text-right" htmlFor="bloodGroup">
                         Blood Group 
                         </label>
