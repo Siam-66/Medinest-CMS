@@ -52,8 +52,8 @@ const AddAppointment = () => {
                        
             <div className="mb-4">
                        {/* doctor */}
-                       <div className="form-control flex flex-row items-center gap-4 mb-5 ml-[22px] ">
-                        <label className="mb-2" htmlFor="doctor">
+                       <div className="form-control flex flex-row items-center gap-4 mb-5 ">
+                        <label className="mb-2 w-40 text-right" htmlFor="doctor">
                             Doctor
                         </label>
                         <CustomInput id="doctor" name="doctor" type="text" onChange={formik.handleChange} value={formik.values.doctor} placeholder="Enter your Name" />
@@ -62,8 +62,8 @@ const AddAppointment = () => {
                         )}
                     </div>
                     {/* patient */}
-                    <div className="form-control mb-5 flex flex-row items-center gap-4 ml-[25px] ">
-                    <label className="mb-2" htmlFor="patient">
+                    <div className="form-control mb-5 flex flex-row items-center gap-4  ">
+                    <label className="mb-2 w-40 text-right" htmlFor="patient">
                     Patient
                         </label>
                     <CustomSelect
@@ -76,8 +76,8 @@ const AddAppointment = () => {
                         </div>
 
                       {/* Date */}
-                    <div className="form-control flex flex-row items-center gap-4  ml-11">
-                        <label className="mb-2" htmlFor="date">
+                    <div className="form-control flex flex-row items-center gap-4 ">
+                        <label className="mb-2 w-40 text-right" htmlFor="date">
                         Date
                         </label>
                         

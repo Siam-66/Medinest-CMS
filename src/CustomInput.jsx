@@ -10,7 +10,7 @@ const CustomInput = ({id,name,type,onChange,value,placeholder}) => {
         onChange={onChange}
         value={value}
         placeholder={placeholder}
-        className="input input-bordered "
+        className=" w-full p-3 border bg-slate-200 border-gray-300 rounded-md focus:outline-blue-300 "
     />
     );
 };

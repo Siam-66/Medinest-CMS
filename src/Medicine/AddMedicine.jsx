@@ -75,8 +75,8 @@ const AddMedicine = () => {
 
                 <div className="mb-4">
                   {/* Name */}
-                    <div className="form-control flex flex-row items-center gap-4 mb-5 ml-[32px] ">
-                        <label className="mb-2" htmlFor="name">
+                    <div className="form-control flex flex-row items-center gap-4 mb-5  ">
+                        <label className="mb-2 w-40 text-right" htmlFor="name">
                         Medicine Name
                         </label>
                         <CustomInput id="name" name="name" type="text" onChange={formik.handleChange} value={formik.values.name} placeholder="Enter medicine name" />
@@ -86,8 +86,8 @@ const AddMedicine = () => {
                     </div>
                     
                 {/* Medicine Category  */}
-                <div className="form-control flex flex-row items-center gap-4 mb-5 ml-[12px] ">
-                    <label className="mb-2" htmlFor="medicineCategory">
+                <div className="form-control flex flex-row items-center gap-4 mb-5 ">
+                    <label className="mb-2 w-40 text-right" htmlFor="medicineCategory">
                     Medicine Category  
                         </label>
                     <CustomSelect
@@ -103,8 +103,8 @@ const AddMedicine = () => {
 
 
                     {/* medicineCategoryDescription */}
-                    <div className="form-control flex flex-row items-center gap-4 mb-5 ml-[-3px] ">
-                        <label className="mb-2" htmlFor="medicineCategoryDescription">
+                    <div className="form-control flex flex-row items-center gap-4 mb-5  ">
+                        <label className="mb-2 w-40 text-right" htmlFor="medicineCategoryDescription">
                             Category Description
                         </label>
                         <textarea className="border-2 border-stone-300 p-3 w-[225px] rounded-lg " id="medicineCategoryDescription" name="medicineCategoryDescription" type="text" onChange={formik.handleChange} value={formik.values.medicineCategoryDescription} placeholder="Write from here" />
@@ -116,8 +116,8 @@ const AddMedicine = () => {
 
 
                    {/* manufacturingCompany */}
-                    <div className="form-control flex flex-row items-center gap-4 mb-5 ml-9">
-                        <label className="mb-2" htmlFor="manufacturingCompany">
+                    <div className="form-control flex flex-row items-center gap-4 mb-5 ">
+                        <label className="mb-2 w-40 text-right"  htmlFor="manufacturingCompany">
                             Manufacturing <br /> Company Name
                         </label>
                         <CustomInput id="manufacturingCompany" name="manufacturingCompany" type="text" onChange={formik.handleChange} value={formik.values.manufacturingCompany} placeholder=" Enter company name" />
@@ -127,8 +127,8 @@ const AddMedicine = () => {
                     </div>
 
                         {/* Price */}
-                        <div className="form-control flex flex-row items-center gap-4 mb-5 ml-[115px] ">
-                        <label className="mb-2" htmlFor="Price">
+                        <div className="form-control flex flex-row items-center gap-4 mb-5 ">
+                        <label className="mb-2 w-40 text-right" htmlFor="Price">
                             Price
                         </label>
                         <CustomInput id="Price" name="Price" type="number" onChange={formik.handleChange} value={formik.values.Price} placeholder="Enter the price" />
@@ -137,8 +137,8 @@ const AddMedicine = () => {
                         )}
                     </div>
                     {/* description */}
-                    <div className="form-control flex flex-row items-center gap-4 mb-5 ml-[67px] ">
-                        <label className="mb-2" htmlFor="description">
+                    <div className="form-control flex flex-row items-center gap-4 mb-5 ">
+                        <label className="mb-2 w-40 text-right" htmlFor="description">
                             Description
                         </label>
                         <textarea className="border-2 border-stone-300 p-3 w-[225px] rounded-lg " id="description" name="description" type="text" onChange={formik.handleChange} value={formik.values.description} placeholder="Write from here" />
@@ -147,8 +147,8 @@ const AddMedicine = () => {
                         )}
                     </div>
                     {/* status */}
-                    <div className="form-control flex flex-row items-center gap-4  ml-[108px] ">
-                        <label className="mb-2" htmlFor="status">
+                    <div className="form-control flex flex-row items-center gap-4  ">
+                        <label className="mb-2 w-40 text-right" htmlFor="status">
                             Status
                         </label>
                         <textarea className="border-2 border-stone-300 p-3 w-[225px] rounded-lg " id="status" name="status" type="text" onChange={formik.handleChange} value={formik.values.status} placeholder="Write from here" />

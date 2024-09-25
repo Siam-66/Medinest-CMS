@@ -7,28 +7,8 @@ const AddDoctor = () => {
 
     const category = [
         { value: 'Allergists', label: 'Allergists' },
-        { value: 'Anesthesiology', label: 'Anesthesiology' },
-        { value: 'Bacteriological Laboratory', label: 'Bacteriological Laboratory' },
-        { value: 'Cardiac Surgeons', label: 'Cardiac Surgeons' },
-        { value: 'Cardiologists', label: 'Cardiologists' },
-        { value: 'Dermatologists', label: 'Dermatologists' },
-        { value: 'Endocrinologists', label: 'Endocrinologists' },
-        { value: 'Gastroenterologists', label: 'Gastroenterologists' },
-        { value: 'General Surgeons', label: 'General Surgeons' },
-        { value: 'Infectious disease doctors', label: 'Infectious disease doctors' },
-        { value: 'Nephrologists', label: 'Nephrologists' },
-        { value: 'Neurologists', label: 'Neurologists' },
-        { value: 'Obstetrician/Gynecologists', label: 'Obstetrician/Gynecologists' },
-        { value: 'Oncologists', label: 'Oncologists' },
-        { value: 'Ophthalmologists', label: 'Ophthalmologists' },
-        { value: 'Orthopedic surgeons ', label: 'Orthopedic surgeons ' },
-        { value: 'Otolaryngologists', label: 'Otolaryngologists' },
-        { value: 'Physical Therapy', label: 'Physical Therapy' },
-        { value: 'Plastic Surgery', label: 'Plastic Surgery' },
-        { value: 'Psychiatrists', label: 'Psychiatrists' },
-        { value: 'Pulmonologists', label: 'Pulmonologists' },
-        { value: 'Radiologists', label: 'Radiologists' },
-        { value: 'Urologists', label: 'Urologists' }
+      
+       
       ]
 
   
@@ -92,8 +72,8 @@ const AddDoctor = () => {
 
                 <div className="mb-4">
                   {/* Name */}
-                    <div className="form-control flex flex-row items-center gap-4 mb-5 ml-14">
-                        <label className="mb-2" htmlFor="name">
+                    <div className="form-control flex flex-row items-center gap-4 mb-5 ">
+                        <label className="mb-2 w-40 text-right" htmlFor="name">
                             Name
                         </label>
                         <CustomInput id="name" name="name" type="text" onChange={formik.handleChange} value={formik.values.name} placeholder="Enter your name" />
@@ -103,8 +83,8 @@ const AddDoctor = () => {
                     </div>
                     
                     {/* Email */}
-                    <div className="form-control flex flex-row items-center gap-4 mb-5 ml-16">
-                        <label className="mb-2" htmlFor="email">
+                    <div className="form-control flex flex-row items-center gap-4 mb-5 ">
+                        <label className="mb-2 w-40 text-right" htmlFor="email">
                             Email
                         </label>
                         <CustomInput id="email" name="email" type="email" onChange={formik.handleChange} value={formik.values.email} placeholder="Enter your email" />
@@ -114,8 +94,8 @@ const AddDoctor = () => {
                     </div>
 
                    {/* Password */}
-                    <div className="form-control flex flex-row items-center gap-4 mb-5 ml-9">
-                        <label className="mb-2" htmlFor="password">
+                    <div className="form-control flex flex-row items-center gap-4 mb-5 ">
+                        <label className="mb-2 w-40 text-right" htmlFor="password">
                             Password
                         </label>
                         <CustomInput id="password" name="password" type="password" onChange={formik.handleChange} value={formik.values.password} placeholder=" Enter your password" />
@@ -125,8 +105,8 @@ const AddDoctor = () => {
                     </div>
 
                         {/* Address */}
-                        <div className="form-control flex flex-row items-center gap-4 mb-5 ml-12">
-                        <label className="mb-2" htmlFor="address">
+                        <div className="form-control flex flex-row items-center gap-4 mb-5">
+                        <label className="mb-2 w-40 text-right" htmlFor="address">
                             Address
                         </label>
                         <CustomInput id="address" name="address" type="text" onChange={formik.handleChange} value={formik.values.address} placeholder="Enter your address" />
@@ -136,8 +116,8 @@ const AddDoctor = () => {
                     </div>
 
                         {/* Phone */}
-                        <div className="form-control flex flex-row items-center gap-4 mb-5 ml-[63px] ">
-                        <label className="mb-2" htmlFor="phone">
+                        <div className="form-control flex flex-row items-center gap-4 mb-5 ">
+                        <label className="mb-2 w-40 text-right" htmlFor="phone">
                             Phone
                         </label>
                         <CustomInput id="phone" name="phone" type="number" onChange={formik.handleChange} value={formik.values.phone} placeholder="Enter your phone" />
@@ -148,8 +128,8 @@ const AddDoctor = () => {
 
                         {/*department*/}
 
-                    <div className="form-control flex flex-row items-center gap-4 mb-5 ml-[25px] ">
-                    <label className="mb-2" htmlFor="department">
+                    <div className="form-control flex flex-row items-center gap-4 mb-5">
+                    <label className="mb-2 w-40 text-right" htmlFor="department">
                         Department
                         </label>
                     <CustomSelect
@@ -162,8 +142,8 @@ const AddDoctor = () => {
                         </div>
 
                        {/* Profile */}
-                       <div className="form-control flex flex-row items-center gap-4 mb-5 ml-[65px] ">
-                        <label className="mb-2" htmlFor="profile">
+                       <div className="form-control flex flex-row items-center gap-4 mb-5 ">
+                        <label className="mb-2 w-40 text-right" htmlFor="profile">
                             Profile
                         </label>
                         <CustomInput id="profile" name="profile" type="text" onChange={formik.handleChange} value={formik.values.profile} placeholder="Enter your Profile" />

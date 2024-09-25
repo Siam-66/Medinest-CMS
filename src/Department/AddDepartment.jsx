@@ -41,8 +41,8 @@ const AddDepartment = () => {
 
                 <div className="mb-4">
                 {/* Department Name*/}
-                    <div className="form-control flex flex-row items-center gap-4 mb-5 ml-9 ">
-                        <label className="mb-2 " htmlFor="departmentName">
+                    <div className="form-control flex flex-row items-center gap-4 mb-5 ">
+                        <label className=" w-40 text-right " htmlFor="departmentName">
                             Department Name
                         </label>
                         <CustomInput id="departmentName" name="departmentName" type="text" onChange={formik.handleChange} value={formik.values.departmentName} placeholder="Enter Department Name " />
@@ -53,7 +53,7 @@ const AddDepartment = () => {
 
                     {/* Department Description */}
                     <div className="form-control flex flex-row items-center gap-4 ">
-                        <label className="mb-2" htmlFor="departmentDescription">
+                        <label className=" w-40 text-right" htmlFor="departmentDescription">
                             Department Description
                         </label>
                         <CustomInput id="departmentDescription" name="departmentDescription" type="text" onChange={formik.handleChange} value={formik.values.departmentDescription} placeholder=" Enter Description" />

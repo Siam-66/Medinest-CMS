@@ -64,8 +64,8 @@ const AddBedAllotment = () => {
                 <div className="mb-4">
 
                     {/* Doctor */}
-                    <div className="form-control flex flex-row items-center mb-5 gap-4 ml-[100px] ">
-                    <label className="mb-2" htmlFor="doctor">
+                    <div className="form-control flex flex-row items-center mb-5 gap-4 ">
+                    <label className="mb-2 w-40 text-right" htmlFor="doctor">
                     Doctor  
                         </label>
                     <CustomSelect
@@ -79,8 +79,8 @@ const AddBedAllotment = () => {
 
                         {/*patient*/}
 
-                        <div className="form-control flex flex-row items-center gap-4 mb-5 ml-[100px] ">
-                    <label className="mb-2" htmlFor="patient">
+                        <div className="form-control flex flex-row items-center gap-4 mb-5 ">
+                    <label className="mb-2 w-40 text-right" htmlFor="patient">
                         Patient
                         </label>
                     <CustomSelect
@@ -94,8 +94,8 @@ const AddBedAllotment = () => {
 
 
                     {/* AllotmentTime */}
-                    <div className="form-control flex flex-row items-center gap-4 mb-5 ml-[42px] ">
-                        <label className="mb-2" htmlFor="allotmentTime">
+                    <div className="form-control flex flex-row items-center gap-4 mb-5 ">
+                        <label className="mb-2 w-40 text-right" htmlFor="allotmentTime">
                             Allotment Time
                         </label>
                         <input className="border-2 border-stone-300 p-3 w-[225px] rounded-lg " id="allotmentTime" name="allotmentTime" type="date" onChange={formik.handleChange} value={formik.values.allotmentTime} placeholder="Enter your allotment time" />
@@ -107,8 +107,8 @@ const AddBedAllotment = () => {
 
 
                     {/* dischargeTime */}
-                    <div className="form-control flex flex-row items-center gap-4  ml-[44px] ">
-                        <label className="mb-2" htmlFor="dischargeTime">
+                    <div className="form-control flex flex-row items-center gap-4  ">
+                        <label className="mb-2 w-40 text-right" htmlFor="dischargeTime">
                             Discharge Time
                         </label>
                         <input className="border-2 border-stone-300 p-3 w-[225px] rounded-lg  " id="dischargeTime" name="dischargeTime" type="date" onChange={formik.handleChange} value={formik.values.dischargeTime} placeholder="Enter your dischargeTime" />

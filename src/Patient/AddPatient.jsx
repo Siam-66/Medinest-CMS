@@ -85,8 +85,8 @@ const Addpatient = () => {
 
                 <div className="mb-4">
                   {/* Name */}
-                    <div className="form-control flex flex-row items-center gap-4 mb-5 ml-14">
-                        <label className="mb-2" htmlFor="name">
+                    <div className="form-control flex flex-row items-center gap-4 mb-5">
+                        <label className="mb-2 w-40 text-right" htmlFor="name">
                             Name
                         </label>
                         <CustomInput id="name" name="name" type="text" onChange={formik.handleChange} value={formik.values.name} placeholder="Enter your name" />
@@ -96,8 +96,8 @@ const Addpatient = () => {
                     </div>
                     
                     {/* Email */}
-                    <div className="form-control flex flex-row items-center gap-4 mb-5 ml-16">
-                        <label className="mb-2" htmlFor="email">
+                    <div className="form-control flex flex-row items-center gap-4 mb-5">
+                        <label className="mb-2 w-40 text-right" htmlFor="email">
                             Email
                         </label>
                         <CustomInput id="email" name="email" type="email" onChange={formik.handleChange} value={formik.values.email} placeholder="Enter your email" />
@@ -107,8 +107,8 @@ const Addpatient = () => {
                     </div>
 
                    {/* Password */}
-                    <div className="form-control flex flex-row items-center gap-4 mb-5 ml-9">
-                        <label className="mb-2" htmlFor="password">
+                    <div className="form-control flex flex-row items-center gap-4 mb-5">
+                        <label className="mb-2 w-40 text-right" htmlFor="password">
                             Password
                         </label>
                         <CustomInput id="password" name="password" type="password" onChange={formik.handleChange} value={formik.values.password} placeholder=" Enter your password" />
@@ -118,8 +118,8 @@ const Addpatient = () => {
                     </div>
 
                         {/* Address */}
-                        <div className="form-control flex flex-row items-center gap-4 mb-5 ml-12">
-                        <label className="mb-2" htmlFor="address">
+                        <div className="form-control flex flex-row items-center gap-4 mb-5">
+                        <label className="mb-2 w-40 text-right" htmlFor="address">
                             Address
                         </label>
                         <CustomInput id="address" name="address" type="text" onChange={formik.handleChange} value={formik.values.address} placeholder="Enter your address" />
@@ -129,8 +129,8 @@ const Addpatient = () => {
                     </div>
 
                         {/* Phone */}
-                        <div className="form-control flex flex-row items-center gap-4 mb-5 ml-[63px] ">
-                        <label className="mb-2" htmlFor="phone">
+                        <div className="form-control flex flex-row items-center gap-4 mb-5 ">
+                        <label className="mb-2 w-40 text-right" htmlFor="phone">
                             Phone
                         </label>
                         <CustomInput id="phone" name="phone" type="number" onChange={formik.handleChange} value={formik.values.phone} placeholder="Enter your phone" />
@@ -141,8 +141,8 @@ const Addpatient = () => {
 
                         {/*Sex*/}
 
-                    <div className="form-control flex flex-row items-center gap-4 mb-5 ml-[84px] ">
-                    <label className="mb-2" htmlFor="sex">
+                    <div className="form-control flex flex-row items-center gap-4 mb-5">
+                    <label className="mb-2 w-40 text-right" htmlFor="sex">
                         Sex
                         </label>
                     <CustomSelect
@@ -155,8 +155,8 @@ const Addpatient = () => {
                         </div>
 
                     {/* Birth Date */}
-                    <div className="form-control flex flex-row items-center gap-4 mb-5 ml-10">
-                        <label className="mb-2" htmlFor="birthDate">
+                    <div className="form-control flex flex-row items-center gap-4 mb-5 ">
+                        <label className="mb-2 w-40 text-right" htmlFor="birthDate">
                             Birth Date
                         </label>
                         <input className="border-2 border-stone-300 p-3 w-[225px] rounded-lg  " id="birthDate" name="birthDate" type="date" onChange={formik.handleChange} value={formik.values.birthDate} placeholder="Enter your birth date" />
@@ -166,8 +166,8 @@ const Addpatient = () => {
                     </div>
 
                        {/* Age */}
-                       <div className="form-control flex flex-row items-center gap-4 mb-5 ml-[83px] ">
-                        <label className="mb-2" htmlFor="age">
+                       <div className="form-control flex flex-row items-center gap-4 mb-5">
+                        <label className="mb-2 w-40 text-right" htmlFor="age">
                             Age
                         </label>
                         <CustomInput id="age" name="age" type="number" onChange={formik.handleChange} value={formik.values.age} placeholder="Enter your age" />
@@ -176,8 +176,8 @@ const Addpatient = () => {
                         )}
                     </div>
                     {/* Blood Group */}
-                    <div className="form-control flex flex-row items-center gap-4 ml-[25px] ">
-                    <label className="mb-2" htmlFor="bloodGroup">
+                    <div className="form-control flex flex-row items-center gap-4 ">
+                    <label className="mb-2 w-40 text-right" htmlFor="bloodGroup">
                         Blood Group 
                         </label>
                     <CustomSelect

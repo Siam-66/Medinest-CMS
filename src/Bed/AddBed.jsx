@@ -50,8 +50,8 @@ const AddBed = () => {
                 <div className="mb-4">
 
                   {/* bedNumber  */}
-                    <div className="form-control flex flex-row items-center gap-4 mb-5 ml-[67px] ">
-                        <label className="mb-2" htmlFor="bedNumber">
+                    <div className="form-control flex flex-row items-center gap-4 mb-5 ">
+                        <label className="mb-2 w-40 text-right" htmlFor="bedNumber">
                         Bed Number  
                         </label>
                         <CustomInput id="bedNumber" name="bedNumber" type="text" onChange={formik.handleChange} value={formik.values.bedNumber} placeholder="Enter the bed number" />
@@ -61,8 +61,8 @@ const AddBed = () => {
                     </div>
 
                     {/* type */}
-                    <div className="form-control flex flex-row items-center mb-5 gap-4 ml-[125px] ">
-                    <label className="mb-2" htmlFor="type">
+                    <div className="form-control flex flex-row items-center mb-5 gap-4 ">
+                    <label className="mb-2 w-40 text-right" htmlFor="type">
                     Type
                         </label>
                     <CustomSelect
@@ -79,8 +79,8 @@ const AddBed = () => {
 
                     
                     {/* description */}
-                    <div className="form-control flex flex-row items-center gap-4  ml-[75px] ">
-                        <label className="mb-2" htmlFor="description">
+                    <div className="form-control flex flex-row items-center gap-4 ">
+                        <label className="mb-2 w-40 text-right" htmlFor="description">
                             Description
                         </label>
                         <textarea className="border-2 border-stone-300 p-3 w-[225px] rounded-lg " id="description" name="description" type="text" onChange={formik.handleChange} value={formik.values.description} placeholder="Write from here" />

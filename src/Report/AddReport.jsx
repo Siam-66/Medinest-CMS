@@ -74,8 +74,8 @@ const AddReport = () => {
 
                 <div className="mb-4">
                     {/* type */}
-                    <div className="form-control flex flex-row items-center mb-5 gap-4 ml-[123px] ">
-                    <label className="mb-2" htmlFor="type">
+                    <div className="form-control flex flex-row items-center mb-5 gap-4 ">
+                    <label className="mb-2 w-40 text-right" htmlFor="type">
                     Type
                         </label>
                     <CustomSelect
@@ -89,8 +89,8 @@ const AddReport = () => {
 
                     
                     {/* description */}
-                    <div className="form-control flex flex-row items-center gap-4 mb-5 ml-[75px] ">
-                        <label className="mb-2" htmlFor="description">
+                    <div className="form-control flex flex-row items-center gap-4 mb-5 ">
+                        <label className="mb-2 w-40 text-right" htmlFor="description">
                             Description
                         </label>
                         <textarea className="border-2 border-stone-300 p-3 w-[225px] rounded-lg " id="description" name="description" type="text" onChange={formik.handleChange} value={formik.values.description} placeholder="Write from here" />
@@ -101,8 +101,8 @@ const AddReport = () => {
 
 
                     {/* Date */}
-                    <div className="form-control flex flex-row items-center gap-4 mb-5 ml-[125px] ">
-                        <label className="mb-2" htmlFor="Date">
+                    <div className="form-control flex flex-row items-center gap-4 mb-5 ">
+                        <label className="mb-2 w-40 text-right" htmlFor="Date">
                         Date
                         </label>
                         <input className="border-2 border-stone-300 p-3 w-[225px] rounded-lg  " id="Date" name="Date" type="date" onChange={formik.handleChange} value={formik.values.Date} placeholder="Enter your allotment time" />
@@ -113,8 +113,8 @@ const AddReport = () => {
 
 
                     {/* Doctor */}
-                    <div className="form-control flex flex-row items-center mb-5 gap-4 ml-[112px] ">
-                    <label className="mb-2" htmlFor="doctor">
+                    <div className="form-control flex flex-row items-center mb-5 gap-4 ">
+                    <label className="mb-2 w-40 text-right" htmlFor="doctor">
                     Doctor  
                         </label>
                     <CustomSelect
@@ -128,8 +128,8 @@ const AddReport = () => {
 
                         {/*patient*/}
 
-                        <div className="form-control flex flex-row items-center gap-4  ml-[112px] ">
-                    <label className="mb-2" htmlFor="patient">
+                        <div className="form-control flex flex-row items-center gap-4 ">
+                    <label className="mb-2 w-40 text-right" htmlFor="patient">
                         Patient
                         </label>
                     <CustomSelect

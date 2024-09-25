@@ -66,8 +66,8 @@ const AddDiagnosticReport = () => {
 
 
                     {/* reportType */}
-                    <div className="form-control flex flex-row items-center mb-5 gap-4 ml-[68px] ">
-                    <label className="mb-2" htmlFor="reportType">
+                    <div className="form-control flex flex-row items-center mb-5 gap-4 ">
+                    <label className="mb-2 w-40 text-right" htmlFor="reportType">
                     Report Type
                         </label>
                     <CustomSelect
@@ -80,8 +80,8 @@ const AddDiagnosticReport = () => {
                         </div>
 
                     {/* documentType */}
-                    <div className="form-control flex flex-row items-center mb-5 gap-4 ml-[42px] ">
-                    <label className="mb-2" htmlFor="documentType">
+                    <div className="form-control flex flex-row items-center mb-5 gap-4  ">
+                    <label className="mb-2 w-40 text-right" htmlFor="documentType">
                     Document Type
                         </label>
                     <CustomSelect
@@ -95,8 +95,8 @@ const AddDiagnosticReport = () => {
 
 
                   {/* uploadDocument  */}
-                  <div className="form-control flex flex-row items-center gap-4 mb-5 ml-[25px] ">
-                        <label className="mb-2" htmlFor="uploadDocument">
+                  <div className="form-control flex flex-row items-center gap-4 mb-5">
+                        <label className="mb-2 w-40 text-right" htmlFor="uploadDocument">
                         Upload Document
                         </label>
                         <input className="border-2 border-stone-300 px-2 py-3 w-[225px] rounded-lg " id="uploadDocument" name="uploadDocument" type="file" onChange={formik.handleChange} value={formik.values.uploadDocument} placeholder="Enter the bed number" />
@@ -107,8 +107,8 @@ const AddDiagnosticReport = () => {
 
                     
                     {/* description */}
-                    <div className="form-control flex flex-row items-center gap-4  ml-[75px] ">
-                        <label className="mb-2" htmlFor="description">
+                    <div className="form-control flex flex-row items-center gap-4  ">
+                        <label className="mb-2 w-40 text-right" htmlFor="description">
                             Description
                         </label>
                         <textarea className="border-2 border-stone-300 p-3 w-[225px] rounded-lg " id="description" name="description" type="text" onChange={formik.handleChange} value={formik.values.description} placeholder="Write from here" />

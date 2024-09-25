@@ -65,8 +65,8 @@ const AddInvoice = () => {
 
                         {/*patient*/}
 
-                        <div className="form-control flex flex-row items-center gap-4 mb-5 ml-[107px] ">
-                    <label className="mb-2" htmlFor="patient">
+                        <div className="form-control flex flex-row items-center gap-4 mb-5  ">
+                    <label className="mb-2 w-40 text-right" htmlFor="patient">
                         Patient
                         </label>
                     <CustomSelect
@@ -79,8 +79,8 @@ const AddInvoice = () => {
                         </div>
 
                   {/* title  */}
-                    <div className="form-control flex flex-row items-center gap-4 mb-5 ml-[129px] ">
-                        <label className="mb-2" htmlFor="title">
+                    <div className="form-control flex flex-row items-center gap-4 mb-5 ">
+                        <label className="mb-2 w-40 text-right" htmlFor="title">
                         Title
                         </label>
                         <CustomInput id="title" name="title" type="text" onChange={formik.handleChange} value={formik.values.title} placeholder="Enter the bed number" />
@@ -89,8 +89,8 @@ const AddInvoice = () => {
                         )}
                     </div>
                   {/* amount  */}
-                  <div className="form-control flex flex-row items-center gap-4 mb-5 ml-[105px] ">
-                        <label className="mb-2" htmlFor="amount">
+                  <div className="form-control flex flex-row items-center gap-4 mb-5  ">
+                        <label className="mb-2 w-40 text-right" htmlFor="amount">
                         Amount 
                         </label>
                         <CustomInput id="amount" name="amount" type="number" onChange={formik.handleChange} value={formik.values.amount} placeholder="Enter the bed number" />
@@ -100,8 +100,8 @@ const AddInvoice = () => {
                     </div>
                     
                     {/* discrimination */}
-                    <div className="form-control flex flex-row items-center gap-4 mb-5 ml-[65px] ">
-                        <label className="mb-2" htmlFor="discrimination">
+                    <div className="form-control flex flex-row items-center gap-4 mb-5 ">
+                        <label className="mb-2 w-40 text-right" htmlFor="discrimination">
                             Discrimination
                         </label>
                         <textarea className="border-2 border-stone-300 p-3 w-[225px] rounded-lg " id="discrimination" name="discrimination" type="text" onChange={formik.handleChange} value={formik.values.discrimination} placeholder="Write from here" />
@@ -111,8 +111,8 @@ const AddInvoice = () => {
                     </div>
 
                     {/* status */}
-                    <div className="form-control flex flex-row items-center  gap-4 ml-[125px] ">
-                    <label className="mb-2" htmlFor="status">
+                    <div className="form-control flex flex-row items-center  gap-4  ">
+                    <label className="mb-2 w-40 text-right" htmlFor="status">
                     Status
                         </label>
                     <CustomSelect

@@ -39,8 +39,8 @@ const AddNoticeboard = () => {
                 <div className="mb-4">
 
                   {/* title  */}
-                    <div className="form-control flex flex-row items-center gap-4 mb-5 ml-[88px] ">
-                        <label className="mb-2" htmlFor="title">
+                    <div className="form-control flex flex-row items-center gap-4 mb-5  ">
+                        <label className="mb-2 w-40 text-right" htmlFor="title">
                         Title 
                         </label>
                         <CustomInput id="title" name="title" type="text" onChange={formik.handleChange} value={formik.values.title} placeholder="Enter the title" />
@@ -52,8 +52,8 @@ const AddNoticeboard = () => {
 
                     
                     {/* notice */}
-                    <div className="form-control flex flex-row items-center mb-5 gap-4  ml-[75px] ">
-                        <label className="mb-2" htmlFor="notice">
+                    <div className="form-control flex flex-row items-center mb-5 gap-4 ">
+                        <label className="mb-2 w-40 text-right" htmlFor="notice">
                             Notice
                         </label>
                         <textarea className="border-2 border-stone-300 p-3 w-[225px] rounded-lg " id="notice" name="notice" type="text" onChange={formik.handleChange} value={formik.values.notice} placeholder="Write from here" />
@@ -63,8 +63,8 @@ const AddNoticeboard = () => {
                     </div>
 
                     {/* date */}
-                    <div className="form-control flex flex-row items-center gap-4  ml-[88px] ">
-                        <label className="mb-2" htmlFor="date">
+                    <div className="form-control flex flex-row items-center gap-4 ">
+                        <label className="mb-2 w-40 text-right" htmlFor="date">
                         Date
                         </label>
                         <input className="border-2 border-stone-300 p-3 w-[225px] rounded-lg " id="date" name="date" type="date" onChange={formik.handleChange} value={formik.values.date} placeholder="Enter your allotment time" />
