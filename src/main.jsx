@@ -61,6 +61,11 @@ import Noticeboard from './Noticeboard/Noticeboard';
 import NoticeboardList from './Noticeboard/NoticeboardList';
 import AddNoticeboard from './Noticeboard/AddNoticeboard';
 import Home from './Home/Home';
+import ContactUs from './Home/Footer/Contact Us/ContactUs';
+import AboutUs from './Home/Footer/About Us/AboutUs';
+import PrivacyPolicy from './Home/Footer/Privacy Policy/PrivacyPolicy';
+import TermsConditions from './Home/Footer/Term Condition/TermsConditions';
+import NavDrawer from './Home/Nav Drawer/NavDrawer';
 
 
 
@@ -68,14 +73,44 @@ import Home from './Home/Home';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Layout/>,
+    // for go to home path just change 'Home' with 'Layout'
+    element: <Layout/>, 
     errorElement:<div className='flex justify-center items-center font-bold h-screen'>this is error page</div>,
     children:[
+      
       
       {
         path:"/",
         element:<Home/>
       },
+
+      {
+        path:"contactUs",
+        element:<ContactUs></ContactUs>
+      },
+
+      {
+        path:"aboutUs",
+        element:<AboutUs></AboutUs>
+      },
+
+      {
+        path:"privacyPolicy",
+        element:<PrivacyPolicy></PrivacyPolicy>
+      },
+
+
+      {
+        path:"termsConditions",
+        element:<TermsConditions></TermsConditions>
+      },
+
+      {
+        path:"navDrawer",
+        element:<NavDrawer></NavDrawer>
+      },
+
+
     {
       path:"/doctor",
       element: <div className=' p-5 w-full h-full' > <Doctor></Doctor></div>, 

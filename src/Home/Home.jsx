@@ -1,12 +1,15 @@
+import NavDrawer from "./Nav Drawer/NavDrawer";
 
-import Banner from './Banner/Banner';
-import ContactUs from './ContactUs/ContactUs';
+
+
+
+
+
 
 const Home = () => {
     return (
         <div>
-            <Banner></Banner>
-            <ContactUs/>
+        aaaaaa
         </div>
     );
 };

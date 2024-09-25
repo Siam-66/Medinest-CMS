@@ -6,8 +6,14 @@ const Sidebar = () => {
         <div>
            
             <div className='flex flex-col gap-5 w-[200px] overflow-y-scroll h-[800px] ...'>
-            
+                
                 <Link to="/">Home</Link>
+                <Link to="navDrawer">Nav Drawer</Link>
+                <Link to="contactUs">Contact Us</Link>
+                <Link to="aboutUs">About Us</Link>
+                <Link to="privacyPolicy">Privacy Policy</Link>
+                <Link to="termsConditions">Terms Condition</Link>
+                
                 <div className='divider'></div>
                 <div className='text-2xl text-amber-300'>Main Navigation:</div>
                 <Link to="/department">Department</Link>
