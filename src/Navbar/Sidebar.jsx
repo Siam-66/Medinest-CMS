@@ -5,9 +5,11 @@ const Sidebar = () => {
     return (
         <div>
            
-            <div className='flex flex-col gap-5 w-[150px] '>
+            <div className='flex flex-col gap-5 w-[200px] overflow-y-scroll h-[800px] ...'>
+            
                 <Link to="/">Home</Link>
-                <hr />
+                <div className='divider'></div>
+                <div className='text-2xl text-amber-300'>Main Navigation:</div>
                 <Link to="/department">Department</Link>
                 <Link to="/doctor">Doctor</Link>
                 <Link to="/patient">Patient</Link>
@@ -15,7 +17,8 @@ const Sidebar = () => {
                 <Link to="/pharmacist">Pharmacist</Link>
                 <Link to="/laboratorist">Laboratorist</Link>
                 <Link to="/bloodDonor">Blood Donor</Link>
-                <hr />
+                <div className='divider'></div>
+                <div className='text-2xl text-amber-300'>Management & Logistics:</div>
                 <Link to="/appointment">Appointment</Link>
                 <Link to="/prescription">Prescription</Link>
                 <Link to="/medicine">Medicine</Link>
@@ -24,10 +27,11 @@ const Sidebar = () => {
                 <Link to="/report">Report</Link>
                 <Link to="/diagnosticReport">Diagnostic Report</Link>
                 <Link to="/noticeboard">Noticeboard</Link>
-                <hr />
+                <div className='divider'></div>
+                <div className='text-2xl text-amber-300'>Administrative & Billing:</div>
                 <Link to="/accountant">Accountant</Link>
                 <Link to="/invoice">Invoice</Link>
-
+                
 
             </div>
         </div>

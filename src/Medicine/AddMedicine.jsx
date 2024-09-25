@@ -23,41 +23,49 @@ const AddMedicine = () => {
   
     const formik = useFormik({
         initialValues: {
-            name: '',
-            description: '',
-            medicineCategoryDescription: '',
-            manufacturingCompany: '',
-            status: '',
-            Price: '',
-            medicineCategory :null,
+            productName: '',
+            genericName: '',
+            longDescription: '',
+            shortDescription: '',
+            productCompany: '',
+            stripSize: '',
+            price: '',
+            productPower: '',
+            productType :null,
           
         },
 
         validate: (values) => {
             const errors = {};
 
-            if (!values.name) {
-                errors.name = 'Required';
+            if (!values.productName) {
+                errors.productName = 'Required';
             }
-            if (!values.medicineCategoryDescription) {
-                errors.medicineCategoryDescription = 'Required'
+            if (!values.genericName) {
+                errors.genericName = 'Required';
             }
-            if (!values.description) {
-                errors.description = 'Required'
+            if (!values.shortDescription) {
+                errors.shortDescription = 'Required'
+            }
+            if (!values.longDescription) {
+                errors.longDescription = 'Required'
+            }
+            if (!values.productPower) {
+                errors.productPower = 'Required';
             }
 
-            if (!values.manufacturingCompany) {
-                errors.manufacturingCompany = 'Required';
+            if (!values.productCompany) {
+                errors.productCompany = 'Required';
             }
-            if (!values.status) {
-                errors.status = 'Required';
+            if (!values.stripSize) {
+                errors.stripSize = 'Required';
             }
-            if (!values.Price) {
-                errors.Price = 'Required';
+            if (!values.price) {
+                errors.price = 'Required';
             }
       
-            if (!values.medicineCategory) {
-                errors.medicineCategory = 'Required';
+            if (!values.productType) {
+                errors.productType = 'Required';
             }
             return errors;
         },
@@ -74,89 +82,111 @@ const AddMedicine = () => {
             <form className="card-body " onSubmit={formik.handleSubmit}>
 
                 <div className="mb-4">
-                  {/* Name */}
+                  {/* productName */}
                     <div className="form-control flex flex-row items-center gap-4 mb-5  ">
-                        <label className="mb-2 w-40 text-right" htmlFor="name">
-                        Medicine Name
+                        <label className="mb-2 w-40 text-right" htmlFor="productName">
+                        Product Name
                         </label>
-                        <CustomInput id="name" name="name" type="text" onChange={formik.handleChange} value={formik.values.name} placeholder="Enter medicine name" />
-                        {formik.errors.name && formik.touched.name && (
-                            <div className="text-red-500">Medicine name is required</div>
+                        <CustomInput id="productName" name="productName" type="text" onChange={formik.handleChange} value={formik.values.productName} placeholder="Enter product name" />
+                        {formik.errors.productName && formik.touched.productName && (
+                            <div className="text-red-500">Product name is required</div>
                         )}
                     </div>
-                    
+
+                   {/* productCompany */}
+                    <div className="form-control flex flex-row items-center gap-4 mb-5 ">
+                        <label className="mb-2 w-40 text-right"  htmlFor="productCompany">
+                        Product Company
+                        </label>
+                        <CustomInput id="productCompany" name="productCompany" type="text" onChange={formik.handleChange} value={formik.values.productCompany} placeholder=" Enter company name" />
+                        {formik.errors.productCompany && formik.touched.productCompany && (
+                            <div className="text-red-500">Product Company is required</div>
+                        )}
+                    </div>
+
+                  {/* genericName */}
+                  <div className="form-control flex flex-row items-center gap-4 mb-5  ">
+                        <label className="mb-2 w-40 text-right" htmlFor="genericName">
+                        Generic Name
+                        </label>
+                        <CustomInput id="genericName" name="genericName" type="text" onChange={formik.handleChange} value={formik.values.genericName} placeholder="Enter product name" />
+                        {formik.errors.genericName && formik.touched.genericName && (
+                            <div className="text-red-500">Generic Name is required</div>
+                        )}
+                    </div>
+
                 {/* Medicine Category  */}
                 <div className="form-control flex flex-row items-center gap-4 mb-5 ">
-                    <label className="mb-2 w-40 text-right" htmlFor="medicineCategory">
-                    Medicine Category  
+                    <label className="mb-2 w-40 text-right" htmlFor="productType">
+                    Product Type 
                         </label>
                     <CustomSelect
-                            id="medicineCategory"
-                            name="medicineCategory"
-                            onChange={(selectedOption) => formik.setFieldValue("medicineCategory", selectedOption)}
-                            value={formik.values.medicineCategory}
+                            id="productType"
+                            name="productType"
+                            onChange={(selectedOption) => formik.setFieldValue("productType", selectedOption)}
+                            value={formik.values.productType}
                             options={blood}
                         />
                         </div>
 
                     
-
-
-                    {/* medicineCategoryDescription */}
+                  {/* productPower */}
                     <div className="form-control flex flex-row items-center gap-4 mb-5  ">
-                        <label className="mb-2 w-40 text-right" htmlFor="medicineCategoryDescription">
-                            Category Description
+                        <label className="mb-2 w-40 text-right" htmlFor="productPower">
+                        Product Power
                         </label>
-                        <textarea className="border-2 border-stone-300 p-3 w-[225px] rounded-lg " id="medicineCategoryDescription" name="medicineCategoryDescription" type="text" onChange={formik.handleChange} value={formik.values.medicineCategoryDescription} placeholder="Write from here" />
-                        {formik.errors.medicineCategoryDescription && formik.touched.medicineCategoryDescription && (
-                            <div className="text-red-500">Category description is required</div>
+                        <CustomInput id="productPower" name="productPower" type="text" onChange={formik.handleChange} value={formik.values.productPower} placeholder="Enter product name" />
+                        {formik.errors.productPower && formik.touched.productPower && (
+                            <div className="text-red-500">Product Power is required</div>
                         )}
                     </div>
 
 
-
-                   {/* manufacturingCompany */}
-                    <div className="form-control flex flex-row items-center gap-4 mb-5 ">
-                        <label className="mb-2 w-40 text-right"  htmlFor="manufacturingCompany">
-                            Manufacturing <br /> Company Name
+                   {/* short Description */}
+                    <div className="form-control flex flex-row items-center gap-4 mb-5  ">
+                        <label className="mb-2 w-40 text-right" htmlFor="shortDescription">
+                        Short Description
                         </label>
-                        <CustomInput id="manufacturingCompany" name="manufacturingCompany" type="text" onChange={formik.handleChange} value={formik.values.manufacturingCompany} placeholder=" Enter company name" />
-                        {formik.errors.manufacturingCompany && formik.touched.manufacturingCompany && (
-                            <div className="text-red-500">Manufacturing company nsame is required</div>
+                        <textarea className="border-2 border-stone-300 p-3 w-[225px] rounded-lg " id="shortDescription" name="shortDescription" type="text" onChange={formik.handleChange} value={formik.values.shortDescription} placeholder="Write from here" />
+                        {formik.errors.shortDescription && formik.touched.shortDescription && (
+                            <div className="text-red-500"> description is required</div>
+                        )}
+                    </div>
+
+
+                    {/* long Description */}
+                    <div className="form-control flex flex-row items-center gap-4 mb-5 ">
+                        <label className="mb-2 w-40 text-right" htmlFor="longDescription">
+                            Long Description
+                        </label>
+                        <textarea className="border-2 border-stone-300 p-3 w-[225px] rounded-lg " id="longDescription" name="longDescription" type="text" onChange={formik.handleChange} value={formik.values.longDescription} placeholder="Write from here" />
+                        {formik.errors.longDescription && formik.touched.longDescription && (
+                            <div className="text-red-500">Description is required</div>
+                        )}
+                    </div>
+
+
+                        {/* stripSize */}
+                        <div className="form-control flex flex-row items-center gap-4 mb-5 ">
+                        <label className="mb-2 w-40 text-right" htmlFor="stripSize">
+                            Strip Size
+                        </label>
+                        <CustomInput id="stripSize" name="stripSize" type="number" onChange={formik.handleChange} value={formik.values.stripSize} placeholder="Enter the stripSize" />
+                        {formik.errors.stripSize && formik.touched.stripSize && (
+                            <div className="text-red-500">Strip Size is required</div>
                         )}
                     </div>
 
                         {/* Price */}
                         <div className="form-control flex flex-row items-center gap-4 mb-5 ">
-                        <label className="mb-2 w-40 text-right" htmlFor="Price">
+                        <label className="mb-2 w-40 text-right" htmlFor="price">
                             Price
                         </label>
-                        <CustomInput id="Price" name="Price" type="number" onChange={formik.handleChange} value={formik.values.Price} placeholder="Enter the price" />
-                        {formik.errors.Price && formik.touched.Price && (
-                            <div className="text-red-500">Price is required</div>
+                        <CustomInput id="price" name="price" type="number" onChange={formik.handleChange} value={formik.values.price} placeholder="Enter the price" />
+                        {formik.errors.price && formik.touched.price && (
+                            <div className="text-red-500">price is required</div>
                         )}
                     </div>
-                    {/* description */}
-                    <div className="form-control flex flex-row items-center gap-4 mb-5 ">
-                        <label className="mb-2 w-40 text-right" htmlFor="description">
-                            Description
-                        </label>
-                        <textarea className="border-2 border-stone-300 p-3 w-[225px] rounded-lg " id="description" name="description" type="text" onChange={formik.handleChange} value={formik.values.description} placeholder="Write from here" />
-                        {formik.errors.description && formik.touched.description && (
-                            <div className="text-red-500">Description is required</div>
-                        )}
-                    </div>
-                    {/* status */}
-                    <div className="form-control flex flex-row items-center gap-4  ">
-                        <label className="mb-2 w-40 text-right" htmlFor="status">
-                            Status
-                        </label>
-                        <textarea className="border-2 border-stone-300 p-3 w-[225px] rounded-lg " id="status" name="status" type="text" onChange={formik.handleChange} value={formik.values.status} placeholder="Write from here" />
-                        {formik.errors.status && formik.touched.status && (
-                            <div className="text-red-500">Status is required</div>
-                        )}
-                    </div>
-
 
 
                 </div>
