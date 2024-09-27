@@ -1,15 +1,14 @@
-import NavDrawer from "./Nav Drawer/NavDrawer";
-
-
-
-
-
+import OurServices from "./Services/OurServices";
+import AboutMdei from "./About/AboutMdei";
+import Banner from "./Banner/Banner";
 
 
 const Home = () => {
     return (
         <div>
-        aaaaaa
+        <Banner></Banner>
+        <AboutMdei></AboutMdei>
+        <OurServices></OurServices>
         </div>
     );
 };
