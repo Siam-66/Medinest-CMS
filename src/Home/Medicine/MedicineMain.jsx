@@ -1,0 +1,37 @@
+
+
+const MedicineMain = () => {
+
+
+  return (
+    <div className="container mx-auto mt-5 border border-gray-300 rounded-lg shadow-lg p-4 max-w-xs relative">
+      
+        <div className="absolute top-2 left-2 bg-red-500 text-white text-xs font-bold py-1 px-2 rounded">
+          10%
+        </div>
+      
+      <img src="https://cdn.osudpotro.com/medicine/napa-500-mg-1634182813132.webp" alt="napa" className="w-full h-50 object-cover rounded-lg mb-3" />
+      <h3 className="text-lg font-semibold mb-1">Napa <span className="text-sm text-gray-500">500 mg</span></h3>
+      <p className="text-green-600 font-medium mb-1">Tablet</p>
+      <p className="text-sm text-gray-500 mb-2">Strip size: 10 Tablets</p>
+      <p className="text-sm text-gray-500 mb-3">Beximco Pharmaceuticals Ltd.</p>
+      <div className="flex items-center mb-4">
+        <span className="text-xl font-bold text-green-600">৳ 0.97</span>
+        <span className="text-sm line-through text-gray-500 ml-2">৳ 1.2</span>
+      </div>
+      <div>
+        <div>
+          <button className="bg-blue-500 text-white w-full py-2 rounded hover:bg-blue-600 transition duration-300">
+            Add to cart
+          </button>
+        </div>
+        <div className='text-center mt-2'>
+          <a href="" className='underline text-blue-500 text-xl font-semibold'>Find out more &gt;&gt;</a>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default MedicineMain;
+
