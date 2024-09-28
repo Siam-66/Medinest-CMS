@@ -11,15 +11,15 @@ const AboutMdei = () => {
             <h2 className="text-4xl  font-semibold text-[#0D2E4E]">About MediNest</h2>
             <h2 className="text-2xl  lg:mt-8 mt-3 font-semibold text-[#0D2E4E]">Who we are</h2>
             <p className="mt-2  lg:text-xl text-lg  text-gray-600">
-        MediNest is an online healthcare platform connecting doctors, patients, clinics, and hospitals. Our services include doctor appointments, emergency care, and domiciliary care at home.
+            MediNest is an online platform connecting patients with doctors, clinics, and healthcare services. From doctor appointments to ambulance services and medicine purchases, we make healthcare easily accessible, right at your fingertips.
             </p>
             <h2 className="text-2xl lg:mt-8 mt-3 font-semibold text-[#0D2E4E]">Our Mission</h2>
             <p className="mt-2 lg:text-xl  text-lg text-gray-600">
-        Our mission is to provide a reliable healthcare solution. MediNest is run by professionals involved in medical research, committed to improving healthcare accessibility in Bangladesh.
+            Our mission is to offer a seamless healthcare experience by linking users with trusted medical professionals. Run by healthcare experts, MediNest is committed to enhancing healthcare access across Bangladesh.
             </p>
             <h2 className="text-2xl lg:mt-8 mt-3 font-semibold text-[#0D2E4E]">Our Vision</h2>
             <p className="mt-2 lg:text-xl text-lg text-gray-600">
-            MediNest aims to be the Countries no.1 trusted healthcare provider, offering medical solutions right at your fingertips.
+            MediNest aspires to be the nation's leading healthcare platform, providing an all-in-one solution for finding doctors, clinics, and services. Our goal is to make healthcare more accessible and personalized for all.
             </p>
             <div className="flex justify-center items-center lg:mt-[50px] mt-4 max-sm:mb-5 " >
                 <a href="" className='text-[#0D2E4E] font-semibold lg:text-3xl text-xl border-[#0D2E4E] border-2 py-3 px-10 rounded-2xl'>Learn More About Us</a>
@@ -41,11 +41,11 @@ const AboutMdei = () => {
             <h2 className="text-4xl font-semibold text-[#0D2E4E]">Healing starts here</h2>
             <h2 className="text-2xl mt-8 font-semibold text-[#0D2E4E]">The right answers the first time</h2>
             <p className="mt-2 text-lg lg:text-xl text-gray-600">
-            Effective treatment begins with the right diagnosis. At MediNest, our expert team is equipped to handle even the most challenging medical cases, ensuring you receive the best possible care.
+            Finding the right care shouldn't be difficult. With MediNest, you can quickly find the healthcare services you need at the touch of a button. We ensure that every medical case, from routine check-ups to complex conditions, is handled with expertise and care.
             </p>
             <h2 className="text-2xl mt-8 font-semibold text-[#0D2E4E]">Top-ranked in the Bangladesh</h2>
             <p className="mt-2 text-lg lg:text-xl text-gray-600">
-            Recognized as the leading healthcare provider, MediNest holds more No. 1 rankings than any other institution in the nation, as per Bangladesh News & World Report.
+            Recognized as a leading healthcare access platform, MediNest connects patients to top healthcare providers across Bangladesh. Our growing network ensures quality healthcare is available to everyone, wherever they are.
             </p>
             <div className="flex justify-center items-center lg:mt-[50px] mt-4 max-sm:mb-5 " >
                 <a href="" className='text-[#0D2E4E] font-semibold lg:text-3xl text-xl border-[#0D2E4E] border-2 py-3 px-10 rounded-2xl'>See Our Specialized Services</a>
