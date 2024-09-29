@@ -1,6 +1,6 @@
 const Testimonial = () => {
     return (
-<div className="relative h-[500px] mt-20 mb-10 flex items-center justify-center">
+<div className="relative h-[500px] md:mt-48 mt-20 mb-10 flex items-center justify-center">
       <img
         src="https://i.ibb.co.com/8cPTcL8/Testimonial.jpg"
         alt="Testimonials Background"
@@ -18,7 +18,7 @@ const Testimonial = () => {
         <div className="grid grid-cols-4 md:grid-cols-2  lg:gap-20 md:gap-10 p-5 text-xl font-extralight ">
           <div>
             <p className="lg:text-8xl font-normal text-4xl md:text-6xl">14k</p>
-            <p className="lg:text-2xl md:text-xl text-sm font-semibold ">Satisfied Users</p>
+            <p className="lg:text-2xl md:text-xl text-sm font-semibold ">Satisfied Patient</p>
             
           </div>
           <div>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const ourServices = () => {
+const membershipPlan = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isCongratsModalOpen, setIsCongratsModalOpen] = useState(false);
   const [selectedPlan, setSelectedPlan] = useState(null);
@@ -8,51 +8,53 @@ const ourServices = () => {
     const plans = [
         {
           name: "Free",
-          price: "$0",
+          price: "৳0",
           duration:"PER MONTH",
           benefits: [
-            "1 Consultation per month",
-            "Access to General Health Tips",
+            "Users can search for doctors and clinics",
+            "One free consultation per month with a general practitioner",
             "Basic Support via Email",
           ],
         },
         {
           name: "Basic",
-          price: "$20",
+          price: "৳399",
           duration:"PER MONTH",
           benefits: [
-            "2 Consultations per month",
-            "Basic Diagnostic Tests",
-            "10% off Medications",
-            "Priority Appointment Booking",
-            "24/7 Online Chat Support",
+            "Everything included in the Free Plan",
+            "Users can book appointments with their preferred doctors without waiting",
+            "One free consultations per month with any available specialist",
+            "5% discount on all medicine purchases through the website",
+            "Free delivery for medicine orders over a certain amount(e.g., ৳500)",
+            "Exclusive access to health webinars and workshops",
           ],
         },
         {
           name: "Premium",
-          price: "$50",
+          price: "৳799",
           duration:"PER MONTH",
           benefits: [
-            "Unlimited Consultations",
-            "Advanced Diagnostic Tests",
-            "20% off Medications",
-            "24/7 Ambulance Service",
-            "Annual Health Checkups",
-            "Dedicated Specialist Support",
+            "Everything included in the Basic Plan",
+            "Unlimited phone consultations (Once a week)",
+            "10% discount on all medicine purchases",
+            "One free ambulance service per month",
+            "Priority access to blood bank requests and services",
+            "Personalized health tracking and monitoring features",
+            "Free delivery service for all medicine orders",
           ],
         },
         {
           name: "Family Plan",
-          price: "$100",
+          price: "৳1499",
           duration:"PER MONTH",
           benefits: [
-            "Unlimited Consultations for Family",
-            "Advanced Diagnostics for Family",
-            "30% off Medications",
-            "Dedicated Home Care Service",
-            "Personal Health Manager",
-            "Annual Family Health Checkups",
-            "Home Doctor Visits",
+            "Everything included in the Premium Plan, but shared across family members(6 members max) ",
+            "A shared platform for managing family members' health records",
+            "Unlimited phone consultations for per family(4 times in a week)",
+            "15% discount on all medicine purchases for all family member",
+            "Family members can access emergency services, including priority ambulance booking",
+            "Participate in health challenges and wellness programs as a family",
+            "Free delivery service for all family members’ medicine orders",
           ],
         },
       ];
@@ -73,7 +75,7 @@ const ourServices = () => {
     
 
     return (
-        <div>
+        <div id="" >
  <div className="bg-gray-100 py-12">
       <div className="text-center">
         <h1 className="md:text-6xl text-4xl font-bold text-gray-800">Membership Plans</h1>
@@ -91,7 +93,7 @@ const ourServices = () => {
           >
             <div>
                 <div className="bg-gradient-to-r from-teal-200 to-blue-700 p-5 md:p-20 mb-5">
-                    <p className=" text-white font-semibold text-8xl ">{plan.price}</p>
+                    <p className=" text-white font-semibold text-[85px] text-center ">{plan.price}</p>
                     <p className=" mt-10 text-white font-semibold text-3xl ">{plan.duration}</p>
                 </div>
             
@@ -99,13 +101,13 @@ const ourServices = () => {
               
               <div className="divider"></div>
 
-              <ul className="mt-6 p-10 space-y-2">
+              <ul className="mt-5 py-5  px-5 space-y-2">
                 {plan.benefits.map((benefit, index) => (
                   <li
                     key={index}
-                    className="text-gray-600 flex text-left text-lg"
+                    className="text-gray-600 flex text-left gap-1 text-lg"
                   >
-                    <span className="bg-green-500 w-4 h-4 inline-block rounded-full mr-2"></span>
+                    <span className=" w-4 h-4 inline-block left-3 rounded-full mr-3 ">✔</span>
                     {benefit}
                   </li>
                 ))}
@@ -178,4 +180,4 @@ const ourServices = () => {
     );
 };
 
-export default ourServices;
+export default membershipPlan;

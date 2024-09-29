@@ -48,6 +48,7 @@ const AboutMdei = () => {
             Recognized as a leading healthcare access platform, MediNest connects patients to top healthcare providers across Bangladesh. Our growing network ensures quality healthcare is available to everyone, wherever they are.
             </p>
             <div className="flex justify-center items-center lg:mt-[50px] mt-4 max-sm:mb-5 " >
+            
                 <a href="" className='text-[#0D2E4E] font-semibold lg:text-3xl text-xl border-[#0D2E4E] border-2 py-3 px-10 rounded-2xl'>See Our Specialized Services</a>
             </div>
         </div>
