@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React, { useRef, useState } from 'react';
 import { CiPlay1 } from "react-icons/ci";
 import { CiPause1 } from "react-icons/ci";
@@ -34,7 +35,7 @@ const Banner = () => {
             <div className="absolute inset-0 flex flex-col justify-center items-center z-20 top-[200px]  md:top-[250px] ">
                 <h1 className="md:text-6xl text-4xl font-bold text-white">Welcome to MediNest</h1>
                 <p className="mt-4 md:text-2xl text-xl text-white mb-5">Nurturing wellness with love and expertise</p>
-                <a href="" className='text-white  md:text-4xl text-3xl border-2 p-3 rounded-2xl'>Our Services</a>
+                <Link to="/" className='text-white  md:text-4xl text-3xl border-2 p-3 rounded-2xl'>Our Services</Link>
             </div>
             <button 
                 onClick={togglePlayPause} 

@@ -1,4 +1,4 @@
-
+import { Link } from 'react-router-dom';
 
 const AboutMdei = () => {
     return (
@@ -22,7 +22,7 @@ const AboutMdei = () => {
             MediNest aspires to be the nation's leading healthcare platform, providing an all-in-one solution for finding doctors, clinics, and services. Our goal is to make healthcare more accessible and personalized for all.
             </p>
             <div className="flex justify-center items-center lg:mt-[50px] mt-4 max-sm:mb-5 " >
-                <a href="" className='text-[#0D2E4E] font-semibold lg:text-3xl text-xl border-[#0D2E4E] border-2 py-3 px-10 rounded-2xl'>Learn More About Us</a>
+                <Link to="/" className='text-[#0D2E4E] font-semibold lg:text-3xl text-xl border-[#0D2E4E] border-2 py-3 px-10 rounded-2xl'>Learn More About Us</Link>
             </div>
             
         </div>
@@ -49,7 +49,7 @@ const AboutMdei = () => {
             </p>
             <div className="flex justify-center items-center lg:mt-[50px] mt-4 max-sm:mb-5 " >
             
-                <a href="" className='text-[#0D2E4E] font-semibold lg:text-3xl text-xl border-[#0D2E4E] border-2 py-3 px-10 rounded-2xl'>See Our Specialized Services</a>
+                <Link to="/" className='text-[#0D2E4E] font-semibold lg:text-3xl text-xl border-[#0D2E4E] border-2 py-3 px-10 rounded-2xl'>See Our Specialized Services</Link>
             </div>
         </div>
         <div className="md:hidden mt-5">

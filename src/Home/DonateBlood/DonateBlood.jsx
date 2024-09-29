@@ -1,4 +1,4 @@
-
+import { Link } from 'react-router-dom';
 
 const DonateBlood = () => {
     return (
@@ -23,9 +23,9 @@ const DonateBlood = () => {
     </p>
 
     {/* Call-to-Action Button */}
-    <a href="#" className="inline-block bg-white text-red-600 font-bold py-3 px-6 rounded-full text-lg transition hover:bg-gray-200">
+    <Link to="/" className="inline-block bg-white text-red-600 font-bold py-3 px-6 rounded-full text-lg transition hover:bg-gray-200">
       Become a Blood Donor
-    </a>
+    </Link>
   </div>
 </div>
 
