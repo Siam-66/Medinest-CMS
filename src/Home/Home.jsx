@@ -7,18 +7,23 @@ import MedicineMain from "./Medicine/MedicineMain";
 import MedicineMainMore from "./Medicine/MedicineMainMore";
 import Faq from "./FAQs/Faq";
 import OurServices from "./OurServices/OurServices";
+import DonateBlood from "./DonateBlood/DonateBlood";
+
 
 const Home = () => {
     return (
         <div>
         <Banner></Banner>
+        
         {/* <Medicines></Medicines> */}
         <MedicineMain></MedicineMain>
         <MedicineMainMore></MedicineMainMore>
         <AboutMdei></AboutMdei>
-        <Testimonial></Testimonial>
         <OurServices></OurServices>
+        <DonateBlood></DonateBlood>
         <MembershipPlan></MembershipPlan>
+        <Testimonial></Testimonial>
+        
         <Faq></Faq>
         </div>
     );

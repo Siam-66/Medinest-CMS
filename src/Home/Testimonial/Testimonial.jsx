@@ -1,6 +1,6 @@
 const Testimonial = () => {
     return (
-<div className="relative h-[500px] md:mt-48 mt-20 mb-10 flex items-center justify-center">
+<div className="relative h-[500px] mt-20 mb-10 flex items-center justify-center">
       <img
         src="https://i.ibb.co.com/8cPTcL8/Testimonial.jpg"
         alt="Testimonials Background"
