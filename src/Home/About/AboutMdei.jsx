@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 const AboutMdei = () => {
     return (
 <div>
-    <div className="divider md:px-[250px] "></div>
+    
 <div className="container mx-auto lg:px-[100px] items-center justify-center flex-col text-justify mb-10">
 
     <div className=" md:flex justify-center items-center lg:gap-[10px] lg:mt-20 mb-10">
@@ -49,7 +49,7 @@ const AboutMdei = () => {
             </p>
             <div className="flex justify-center items-center lg:mt-[50px] mt-4 max-sm:mb-5 " >
             
-                <Link to="/" className='text-[#0D2E4E] font-semibold lg:text-3xl text-xl border-[#0D2E4E] border-2 py-3 px-10 rounded-2xl'>See Our Specialized Services</Link>
+                <Link to="/" className='text-[#0D2E4E] font-semibold lg:text-3xl text-xl border-[#0D2E4E] border-2 py-3 px-10 rounded-2xl'>Make An Appointment</Link>
             </div>
         </div>
         <div className="md:hidden mt-5">
