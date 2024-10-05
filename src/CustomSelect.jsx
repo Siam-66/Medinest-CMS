@@ -13,7 +13,7 @@ const CustomSelect = ({id,name,onChange,value,options}) => {
             control: (provided) => ({
                 ...provided,
                 minHeight: '47px',
-                width: '225px',
+                width: '300px',
                 borderRadius: '8px'
             }),
         }}

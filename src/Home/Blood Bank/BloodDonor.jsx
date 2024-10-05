@@ -54,7 +54,7 @@ const BloodDonor = () => {
                 <h2 className="font-bold text-2xl text-[#0D2E4E]">Tahery Hujur</h2>
                 <p className="text-[#1e6fc0] text-lg">North Mugda Para, Dhaka-1214</p>
                 <div className=" text-lg">
-                    <p><strong>Last Donation:</strong> 1 months ago</p>
+                    <p><strong>Last Donation:</strong>  months ago</p>
                     <p><strong>Blood Group:</strong> A+</p>
                     <p><strong>Age:</strong> 45</p>
                 </div>

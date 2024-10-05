@@ -17,6 +17,9 @@ const Patient = () => {
           <samp><FaPlus /></samp><Link to="addPatient"> Add Patient</Link>
           </div>
          
+          <div className="flex items-center gap-2 text-white py-2 px-3 text-lg font-semibold border-b-2 border-white ">
+          <samp><FaPlus /></samp><Link to="updatePatient"> Update Patient</Link>
+          </div>
         </div>
       </div>
       <Outlet></Outlet>

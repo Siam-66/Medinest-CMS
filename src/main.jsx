@@ -66,6 +66,12 @@ import AboutUs from './Home/Footer/About Us/AboutUs';
 import PrivacyPolicy from './Home/Footer/Privacy Policy/PrivacyPolicy';
 import TermsConditions from './Home/Footer/Term Condition/TermsConditions';
 import NavDrawer from './Home/Nav Drawer/NavDrawer';
+import Admin from './Admin/Admin';
+import AdminList from './Admin/AdminList';
+import AddAdmin from './Admin/AddAdmin';
+import UpdateAdmin from './Admin/UpdateAdmin';
+import UpdateAppointment from './Appointment/UpdateAppointment';
+import UpdatePatient from './Patient/UpdatePatient';
 
 
 
@@ -74,7 +80,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     // for go to home path just change 'Home' with 'Layout'
-    element: <Home/>, 
+    element: <Layout/>, 
     errorElement:<div className='flex justify-center items-center font-bold h-screen'>this is error page</div>,
     children:[
       
@@ -110,6 +116,32 @@ const router = createBrowserRouter([
         element:<NavDrawer></NavDrawer>
       },
 
+
+      {
+        path:"/admin",
+        element: <div className=' p-5 w-full h-full' > <Admin></Admin></div>, 
+        children:[
+          {
+            path:"",
+            element:<AdminList></AdminList>
+          },
+          {
+              path:"adminList",
+              element:<AdminList></AdminList>
+          }
+          ,
+          {
+            path:"addAdmin",
+            element:<AddAdmin></AddAdmin>
+          }
+          ,
+          {
+            path:"updateAdmin",
+            element:<UpdateAdmin></UpdateAdmin>
+          }
+        ]
+      },
+  
 
     {
       path:"/doctor",
@@ -184,6 +216,11 @@ const router = createBrowserRouter([
         {
           path:"addAppointment",
           element:<AddAppointment></AddAppointment>
+        }
+        ,
+        {
+          path:"updateAppointment",
+          element:<UpdateAppointment></UpdateAppointment>
         }
       ]
     },
@@ -417,6 +454,12 @@ const router = createBrowserRouter([
           path:"AddPatient",
           element:<Addpatient></Addpatient>
         }
+        ,
+        {
+          path:"UpdatePatient",
+          element:<UpdatePatient></UpdatePatient>
+        }
+        
       ]
     },
     

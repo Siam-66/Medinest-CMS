@@ -11,10 +11,15 @@ const Appointment = () => {
           <div className="flex items-center gap-2 text-white py-2 px-3 text-lg font-semibold border-b-2 border-white ">
           <span><TfiMenuAlt></TfiMenuAlt></span> <Link to="appointmentList"> Appointment List </Link>
             </div>
+
             <div className="flex items-center gap-2 text-white py-2 px-3 text-lg font-semibold border-b-2 border-whites">
             <samp><FaPlus /></samp><Link to="addAppointment"> Add Appointment</Link>
             </div>
            
+            <div className="flex items-center gap-2 text-white py-2 px-3 text-lg font-semibold border-b-2 border-whites">
+            <samp><FaPlus /></samp><Link to="updateAppointment"> Update Appointment</Link>
+            </div>
+
           </div>
         </div>
         <Outlet></Outlet>

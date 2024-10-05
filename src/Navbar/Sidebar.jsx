@@ -16,6 +16,7 @@ const Sidebar = () => {
                 
                 <div className='divider'></div>
                 <div className='text-2xl text-amber-300'>Main Navigation:</div>
+                <Link to="/admin">Admin</Link>
                 <Link to="/department">Department</Link>
                 <Link to="/doctor">Doctor</Link>
                 <Link to="/patient">Patient</Link>

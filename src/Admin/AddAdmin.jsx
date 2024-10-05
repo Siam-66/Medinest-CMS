@@ -2,8 +2,7 @@ import { useFormik } from "formik";
 import CustomInput from "../CustomInput";
 import CustomSelect from "../CustomSelect";
 
-
-const Addpatient = () => {
+const AddAdmin = () => {
 
     const gender = [
         { value: 'Male ', label: 'Male ' },
@@ -34,6 +33,8 @@ const Addpatient = () => {
             birthDate: '',
             age: '',
             bloodGroup :null,
+            user :null,
+            clinicName :null,
           
         },
 
@@ -68,6 +69,12 @@ const Addpatient = () => {
             if (!values.bloodGroup) {
                 errors.bloodGroup = 'Required';
             }
+            if (!values.user) {
+                errors.user = 'Required';
+            }
+            if (!values.clinicName) {
+                errors.clinicName = 'Required';
+            }
             return errors;
         },
         
@@ -77,14 +84,12 @@ const Addpatient = () => {
     });
 
     return (
-
-    <div className="p-6">
+        <div className="p-6">
        
         <div className=" border-2 border-stone-400   " >
             <form className="card-body " onSubmit={formik.handleSubmit}>
 
                 <div className="mb-4">
-
 
                         {/* user*/}
 
@@ -97,6 +102,21 @@ const Addpatient = () => {
                             name=" user"
                             onChange={(selectedOption) => formik.setFieldValue(" user", selectedOption)}
                             value={formik.values. user}
+                            options={gender}
+                        />
+                        </div>
+
+                        {/* clinicName*/}
+
+                        <div className="form-control flex flex-row items-center  gap-4 mb-5">
+                    <label className="mb-2 w-40 text-right" htmlFor=" clinicName">
+                        Clinic Name
+                        </label>
+                    <CustomSelect
+                            id=" clinicName"
+                            name=" clinicName"
+                            onChange={(selectedOption) => formik.setFieldValue(" clinicName", selectedOption)}
+                            value={formik.values. clinicName}
                             options={gender}
                         />
                         </div>
@@ -123,7 +143,7 @@ const Addpatient = () => {
                         )}
                     </div>
 
-                   {/* image */}
+                   {/* Image */}
                     <div className="form-control flex flex-row items-center gap-4 mb-5">
                         <label className="mb-2 w-40 text-right" htmlFor="image">
                             Image
@@ -131,17 +151,6 @@ const Addpatient = () => {
                         <CustomInput id="image" name="image" type="text" onChange={formik.handleChange} value={formik.values.image} placeholder=" Enter your image" />
                         {formik.errors.image && formik.touched.image && (
                             <div className="text-red-500">image is required</div>
-                        )}
-                    </div>
-
-                        {/* Address */}
-                        <div className="form-control flex flex-row items-center gap-4 mb-5">
-                        <label className="mb-2 w-40 text-right" htmlFor="address">
-                            Address
-                        </label>
-                        <CustomInput id="address" name="address" type="text" onChange={formik.handleChange} value={formik.values.address} placeholder="Enter your address" />
-                        {formik.errors.address && formik.touched.address && (
-                            <div className="text-red-500">Address is required</div>
                         )}
                     </div>
 
@@ -158,7 +167,7 @@ const Addpatient = () => {
 
                         {/*Sex*/}
 
-                    <div className="form-control flex flex-row items-center gap-4 mb-5">
+                    <div className="form-control flex flex-row items-center  gap-4 mb-5">
                     <label className="mb-2 w-40 text-right" htmlFor="sex">
                         Sex
                         </label>
@@ -170,28 +179,6 @@ const Addpatient = () => {
                             options={gender}
                         />
                         </div>
-
-                    {/* Birth Date */}
-                    <div className="form-control flex flex-row items-center gap-4 mb-5 ">
-                        <label className="mb-2 w-40 text-right" htmlFor="birthDate">
-                            Birth Date
-                        </label>
-                        <input className="border-2 border-stone-300 p-3 w-[225px] rounded-lg  " id="birthDate" name="birthDate" type="date" onChange={formik.handleChange} value={formik.values.birthDate} placeholder="Enter your birth date" />
-                        {formik.errors.birthDate && formik.touched.birthDate && (
-                            <div className="text-red-500">Birth Date  is required</div>
-                        )}
-                    </div>
-
-                       {/* Age */}
-                       <div className="form-control flex flex-row items-center gap-4 mb-5">
-                        <label className="mb-2 w-40 text-right" htmlFor="age">
-                            Age
-                        </label>
-                        <CustomInput id="age" name="age" type="number" onChange={formik.handleChange} value={formik.values.age} placeholder="Enter your age" />
-                        {formik.errors.age && formik.touched.age && (
-                            <div className="text-red-500">Age is required</div>
-                        )}
-                    </div>
                     {/* Blood Group */}
                     <div className="form-control flex flex-row items-center gap-4 ml-[25px] ">
                     <label className="mb-2 w-40 text-right" htmlFor="bloodGroup">
@@ -217,5 +204,4 @@ const Addpatient = () => {
     );
 };
 
-export default Addpatient;
-
+export default AddAdmin;

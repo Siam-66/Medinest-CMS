@@ -2,8 +2,7 @@ import { useFormik } from "formik";
 import CustomInput from "../CustomInput";
 import CustomSelect from "../CustomSelect";
 
-
-const Addpatient = () => {
+const UpdatePatient = () => {
 
     const gender = [
         { value: 'Male ', label: 'Male ' },
@@ -77,8 +76,7 @@ const Addpatient = () => {
     });
 
     return (
-
-    <div className="p-6">
+        <div className="p-6">
        
         <div className=" border-2 border-stone-400   " >
             <form className="card-body " onSubmit={formik.handleSubmit}>
@@ -217,5 +215,4 @@ const Addpatient = () => {
     );
 };
 
-export default Addpatient;
-
+export default UpdatePatient;
