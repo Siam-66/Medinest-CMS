@@ -80,7 +80,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     // for go to home path just change 'Home' with 'Layout'
-    element: <Layout/>, 
+    element: <Home/>, 
     errorElement:<div className='flex justify-center items-center font-bold h-screen'>this is error page</div>,
     children:[
       

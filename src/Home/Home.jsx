@@ -8,6 +8,7 @@ import Testimonial from "./Testimonial/Testimonial";
 import Faq from "./FAQs/Faq";
 import OurServices from "./OurServices/OurServices";
 import DonateBlood from "./DonateBlood/DonateBlood";
+import Clinics from "./Doctor Clinic/Clinics";
 
 // import BloodDonor from "./Blood Bank/BloodDonor";
 // import BloodBank from "./Blood Bank/BloodBank";
@@ -28,7 +29,7 @@ const Home = () => {
         <BloodBank></BloodBank> 
         <BloodDonor></BloodDonor>
         */}
-        
+        <Clinics></Clinics>
         <AboutMdei></AboutMdei>
         <OurServices></OurServices>
         <DonateBlood></DonateBlood>
