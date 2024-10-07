@@ -22,9 +22,9 @@ const DoctorClinic = () => {
 
         <div className='flex justify-around items-center mt-5'>
         
-        <Link to="/"className='flex items-center gap-1 text-green-600 bg-white font-semibold lg:text-4xl md:text-3xl text-2xl border-green-600  border-2 p-2 rounded-xl' >< PiPhoneCall /> <p className='lg:text-3xl md:text-2xl text-xl'>01620643588</p> </Link>
+        <Link to="/"className='flex items-center hover:bg-gradient-to-r from-green-500 to-green-700 hover:text-white gap-1 text-green-600 bg-white font-semibold lg:text-4xl md:text-3xl text-2xl border-green-600  border-2 p-2 rounded-xl' >< PiPhoneCall /> <p className='lg:text-3xl md:text-2xl text-xl'>01620643588</p> </Link>
 
-        <Link to="/" className='flex items-center gap-1 text-[#0D2E4E] bg-white font-semibold lg:text-3xl md:text-2xl text-xl border-2 border-[#0D2E4E] p-2 rounded-xl' ><BsCalendar2Check /> <p>Appointment</p> </Link>
+        <Link to="/" className='flex items-center hover:bg-gradient-to-r from-[#1e6fc0] to-[#0D2E4E] hover:text-white gap-1 text-[#0D2E4E] bg-white font-semibold lg:text-3xl md:text-2xl text-xl border-2 border-[#0D2E4E] p-2 rounded-xl' ><BsCalendar2Check /> <p>Appointment</p> </Link>
         
         </div>
 

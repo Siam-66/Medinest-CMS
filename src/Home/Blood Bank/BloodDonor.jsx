@@ -34,7 +34,7 @@ const BloodDonor = () => {
 
         
         <div className=' flex justify-start items-start mt-5'>
-        <Link to="/"className='flex justify-center items-center  gap-1 text-green-600 bg-white font-semibold lg:text-4xl md:text-3xl text-2xl border-green-600  border-2 p-2 rounded-xl' >< PiPhoneCall /> <p className='lg:text-3xl md:text-2xl text-xl'>01620643588</p> </Link>
+        <Link to="/"className='flex justify-center items-center hover:bg-gradient-to-r from-green-500 to-green-700 hover:text-white gap-1 text-green-600 bg-white font-semibold lg:text-4xl md:text-3xl text-2xl border-green-600  border-2 p-2 rounded-xl' >< PiPhoneCall /> <p className='lg:text-3xl md:text-2xl text-xl'>01620643588</p> </Link>
         </div>
 
     </div>
@@ -68,7 +68,7 @@ const BloodDonor = () => {
 
         
         <div className=' flex justify-start items-start mt-5'>
-        <Link to="/"className='flex justify-center items-center  gap-1 text-green-600 bg-white font-semibold lg:text-4xl md:text-3xl text-2xl border-green-600  border-2 p-2 rounded-xl' >< PiPhoneCall /> <p className='lg:text-3xl md:text-2xl text-xl'>01620643588</p> </Link>
+        <Link to="/"className='flex justify-center items-center hover:bg-gradient-to-r from-green-500 to-green-700 hover:text-white gap-1 text-green-600 bg-white font-semibold lg:text-4xl md:text-3xl text-2xl border-green-600  border-2 p-2 rounded-xl' >< PiPhoneCall /> <p className='lg:text-3xl md:text-2xl text-xl'>01620643588</p> </Link>
         </div>
 
     </div>

@@ -4,7 +4,7 @@ const AboutMdei = () => {
     return (
 <div>
     
-<div className="container mx-auto lg:px-[100px] items-center justify-center flex-col text-justify mb-10">
+<div className="container mx-auto lg:px-[100px] items-center justify-center flex-col text-justify mt-10 mb-10">
 
     <div className=" md:flex justify-center items-center lg:gap-[10px] lg:mt-20 mb-10">
         <div className="lg:px-20 px-5 ">
