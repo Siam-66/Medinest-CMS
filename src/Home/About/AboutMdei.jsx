@@ -9,7 +9,7 @@ const AboutMdei = () => {
     <div className=" md:flex justify-center items-center lg:gap-[10px] lg:mt-20 mb-10">
         <div className="lg:px-20 px-5 ">
             <h2 className="text-4xl  font-semibold text-[#0D2E4E]">About MediNest</h2>
-            <h2 className="text-2xl  lg:mt-8 mt-3 font-semibold text-[#0D2E4E]">Who we are</h2>
+            <h2 className="text-2xl  lg:mt-5 mt-3 font-semibold text-[#0D2E4E]">Who we are</h2>
             <p className="mt-2  lg:text-xl text-lg  text-gray-600">
             MediNest is an online platform connecting patients with doctors, clinics, and healthcare services. From doctor appointments to ambulance services and medicine purchases, we make healthcare easily accessible, right at your fingertips.
             </p>
@@ -22,7 +22,7 @@ const AboutMdei = () => {
             MediNest aspires to be the nation's leading healthcare platform, providing an all-in-one solution for finding doctors, clinics, and services. Our goal is to make healthcare more accessible and personalized for all.
             </p>
             <div className="flex justify-center items-center lg:mt-[50px] mt-4 max-sm:mb-5 " >
-                <Link to="/" className='text-[#0D2E4E] font-semibold lg:text-3xl text-xl border-[#0D2E4E] border-2 py-3 px-10 rounded-2xl'>Learn More About Us</Link>
+                <Link to="/" className=' hover:bg-gradient-to-r from-[#1e6fc0] to-[#0D2E4E] hover:text-white hover:border-white text-[#0D2E4E] font-semibold lg:text-3xl text-xl border-[#0D2E4E] border-2 py-3 px-10 rounded-2xl'>Learn More About Us</Link>
             </div>
             
         </div>
@@ -32,24 +32,28 @@ const AboutMdei = () => {
     </div>
 
 
-    <div className="lg:px-20 md:flex justify-center items-center lg:gap-[50px]">
+    <div className="lg:px-20  md:flex justify-center items-center  lg:gap-[50px]">
 
         <div className=" max-sm:hidden">
             <img src="https://i.ibb.co.com/svMn5zH/about3.jpg" alt="Healthcare Image 2" className="w-[1700px] rounded-lg shadow-lg" />
         </div>
         <div className="lg:pl-[80px] px-5">
-            <h2 className="text-4xl font-semibold text-[#0D2E4E]">Healing starts here</h2>
-            <h2 className="text-2xl mt-8 font-semibold text-[#0D2E4E]">The right answers the first time</h2>
+            <h2 className="text-4xl  font-semibold text-[#0D2E4E]">Healing starts here</h2>
+            <h2 className="text-2xl lg:mt-8 mt-3 font-semibold text-[#0D2E4E]">The right answers the first time</h2>
             <p className="mt-2 text-lg lg:text-xl text-gray-600">
             Finding the right care shouldn't be difficult. With MediNest, you can quickly find the healthcare services you need at the touch of a button. We ensure that every medical case, from routine check-ups to complex conditions, is handled with expertise and care.
             </p>
-            <h2 className="text-2xl mt-8 font-semibold text-[#0D2E4E]">Top-ranked in the Bangladesh</h2>
+            <h2 className="text-2xl lg:mt-8 mt-2 font-semibold text-[#0D2E4E]">Top-ranked in the Bangladesh</h2>
             <p className="mt-2 text-lg lg:text-xl text-gray-600">
-            Recognized as a leading healthcare access platform, MediNest connects patients to top healthcare providers across Bangladesh. Our growing network ensures quality healthcare is available to everyone, wherever they are.
+             MediNest connects patients to top healthcare providers across Bangladesh. Our growing network ensures quality healthcare is available to everyone, wherever they are.
+            </p>
+            <h2 className="text-2xl lg:mt-8 mt-2 font-semibold text-[#0D2E4E]">Personalized Healthcare for All</h2>
+            <p className="mt-2 text-lg lg:text-xl text-gray-600">
+            MediNest tailors healthcare to each patient's unique needs. With personalized care plans and services, we ensure every patient receives the best treatment for their health concerns.
             </p>
             <div className="flex justify-center items-center lg:mt-[50px] mt-4 max-sm:mb-5 " >
             
-                <Link to="/" className='text-[#0D2E4E] font-semibold lg:text-3xl text-xl border-[#0D2E4E] border-2 py-3 px-10 rounded-2xl'>Make An Appointment</Link>
+                <Link to="/" className=' hover:bg-gradient-to-r from-[#1e6fc0] to-[#0D2E4E] hover:text-white  hover:border-white text-[#0D2E4E] font-semibold lg:text-3xl text-xl border-[#0D2E4E] border-2 py-3 px-10 rounded-2xl'>Make An Appointment</Link>
             </div>
         </div>
         <div className="md:hidden mt-5">

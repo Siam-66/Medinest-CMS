@@ -10,7 +10,7 @@ const MembershipPlan = () => {
   const plans = [
     {
       name: "Free",
-      price: "৳0",
+      price: "0",
       duration: "PER MONTH",
       benefits: [
         "Users can search for doctors and clinics",
@@ -20,8 +20,10 @@ const MembershipPlan = () => {
     },
     {
       name: "Basic",
-      price: "৳399",
+      price: "399",
       duration: "PER MONTH",
+      cashback: "50TK",
+      image: "https://i.ibb.co.com/LN48nhM/25-removebg-preview.png",
       benefits: [
         "Everything included in the Free Plan",
         "Users can book appointments with their preferred doctors without waiting",
@@ -33,8 +35,10 @@ const MembershipPlan = () => {
     },
     {
       name: "Premium",
-      price: "৳799",
+      price: "799",
       duration: "PER MONTH",
+      cashback: "100TK",
+      image: "https://i.ibb.co.com/LN48nhM/25-removebg-preview.png",
       benefits: [
         "Everything included in the Basic Plan",
         "Unlimited phone consultations (Once a week)",
@@ -47,8 +51,10 @@ const MembershipPlan = () => {
     },
     {
       name: "Family Plan",
-      price: "৳1499",
+      price: "1499",
       duration: "PER MONTH",
+      cashback: "150TK",
+      image: "https://i.ibb.co.com/LN48nhM/25-removebg-preview.png",
       benefits: [
         "Everything included in the Premium Plan, but shared across family members (6 members max)",
         "A shared platform for managing family members' health records",
@@ -78,41 +84,51 @@ const MembershipPlan = () => {
   };
 
   return (
-    <div className="mt-20">
+    <div className="mt-20 bg-gray-100">
       {showPlans ? ( // Show plans only if showPlans is true
-        <div className="bg-gray-100 py-12">
+        <div className=" py-12 container mx-auto">
           <div className="text-center">
             <h1 className="md:text-6xl text-4xl font-bold text-gray-800">Membership Plans</h1>
-            <p className="text-gray-600 mt-6 text-xl mb-10">Choose a plan that fits your healthcare needs.</p>
-            <div className="divider lg:px-32 px-12"></div>
+            <p className="text-gray-600 mt-6 max-sm:px-8 md:text-xl mb-10">We’re available on bKash, making payments easy and convenient for you. <br className="max-sm:hidden" /> So choose a plan that fits your healthcare needs.</p>
+            <div className="divider  lg:px-44 md:px-28 px-8"></div>
           </div>
 
-          <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 max-sm:px-14 gap-[50px] mt-16">
+          <div className=" grid md:grid-cols-2 lg:grid-cols-4 max-sm:px-20 md:gap-[55px] gap-9 mt-16">
             {plans.map((plan, index) => (
               <div key={index} className="bg-white shadow-lg  rounded-b-3xl text-center flex flex-col justify-between">
                 <div>
-                  <div className="bg-gradient-to-r from-teal-200 to-blue-700 p-5 md:p-20 mb-5">
-                    <p className="text-white font-semibold text-[85px] text-center">{plan.price}</p>
-                    <p className="mt-10 text-white font-semibold text-3xl">{plan.duration}</p>
+                  <div className="bg-gradient-to-r from-[#1e6fc0] to-[#0D2E4E] relative p-5 mb-4">
+                    <p className="text-white font-semibold  md:text-[80px] text-[50px] text-center flex justify-center items-start"><samp className="text-4xl">৳</samp> {plan.price}</p>
+                    <p className="md:mt-5 text-white font-semibold text-2xl md:text-3xl">{plan.duration}</p>
+
+                    <img className="absolute w-32 top-[-63px] right-[-70px]" src={plan.image} alt="" />
                   </div>
 
-                  <h2 className="text-4xl font-bold text-[#0D2E4E]">{plan.name}</h2>
-                  <div className="divider"></div>
-                  <ul className="mt-5 py-5  px-5 space-y-2">
+                  <h2 className="md:text-4xl text-3xl mb-5 font-bold text-[#0D2E4E]">{plan.name}</h2>
+                  <div>
+                    {plan.cashback?<p className="text-lg mb-4  ">Pay with<span className="text-rose-600 font-extrabold "> b</span><span className="font-extrabold">Kash</span> to get <span className="text-[#2ECC71] font-bold">{plan.cashback}</span> cashback! </p>:<p className="text-lg mb-4"> <span className="text-[#0D2E4E] font-bold ">Upgrade to enjoy</span> <span className="text-[#2ECC71] font-bold ">exclusive services!</span> </p>}
+                  </div>
+                  
+                  <hr />
+                  <ul className=" mt-5 px-5 space-y-2">
                     {plan.benefits.map((benefit, index) => (
-                      <li key={index} className="text-gray-600 flex text-left gap-1 text-lg">
+                      <li key={index} className="text-gray-600 flex text-left  gap-1 md:text-lg  ">
                         <span className="w-4 h-4 inline-block left-3 rounded-full mr-3">✔</span>
                         {benefit}
                       </li>
                     ))}
                   </ul>
+                  
                 </div>
-                <button className="mt-8 py-5 w-full  bg-[#0D2E4E] text-white  text-2xl font-semibold rounded-b-3xl hover:bg-gradient-to-r from-teal-400 to-blue-700" onClick={() => handleChoosePlan(plan)}>
+                
+                <button className="mt-8 py-5 w-full hover:scale-[1.01] bg-[#0D2E4E] text-white md:text-3xl text-2xl font-semibold rounded-b-3xl hover:bg-gradient-to-r from-[#1e6fc0] to-[#0D2E4E]" onClick={() => handleChoosePlan(plan)}>
                   Choose {plan.name}
                 </button>
               </div>
             ))}
           </div>
+
+{/* modal */}
 
           {isModalOpen && (
             <div>
@@ -134,6 +150,8 @@ const MembershipPlan = () => {
             </div>
           )}
 
+{/* modal-2 */}
+
           {isCongratsModalOpen && (
             <div>
               <input type="checkbox" id="congrats-modal" className="modal-toggle" checked />
@@ -153,13 +171,9 @@ const MembershipPlan = () => {
         </div>
       ) : null}
 
-      {showCongratsSection && ( // Show a different section after close confirmation
-        // <div className="bg-gray-200 py-12 w-2/6 text-center container mx-auto ">
-        //   <h2 className="md:text-4xl text-2xl font-bold text-gray-800">Thank you for subscribing!</h2>
-        //   <p className="text-gray-600 mt-4 text-lg">We're excited to have you onboard. You can now enjoy your benefits.</p>
-        // </div>
-
-        <div className="bg-gradient-to-r from-blue-500 to-teal-400 py-16 px-8 md:px-16 w-11/12 md:w-2/5 text-center rounded-3xl shadow-lg mx-auto mt-12">
+      {showCongratsSection && (
+  
+        <div className="bg-gradient-to-r from-blue-500 to-teal-400 py-16 px-8 md:px-16 w-11/12 md:w-3/5 text-center rounded-3xl shadow-lg mx-auto mt-12">
   <div className="flex justify-center items-center mb-6">
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -176,7 +190,7 @@ const MembershipPlan = () => {
       />
     </svg>
   </div>
-  <h2 className="text-white md:text-5xl text-3xl font-bold">
+  <h2 className="text-white md:text-4xl lg:text-5xl text-3xl font-bold">
     Thank you for subscribing!
   </h2>
   <p className="text-white mt-4 text-lg md:text-xl leading-relaxed">

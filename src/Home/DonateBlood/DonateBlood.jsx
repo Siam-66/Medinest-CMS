@@ -23,7 +23,7 @@ const DonateBlood = () => {
     </p>
 
     {/* Call-to-Action Button */}
-    <Link to="/" className="inline-block bg-white text-red-600 font-bold py-3 px-6 rounded-full text-lg transition hover:bg-gray-200">
+    <Link to="/" className="inline-block bg-white border-2 text-red-600 font-bold py-3 px-6 rounded-full text-lg transition hover:bg-gradient-to-r from-pink-700 to-rose-600 hover:text-white hover:border-pink-500 hover:border-2 ">
       Become a Blood Donor
     </Link>
   </div>

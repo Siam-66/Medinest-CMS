@@ -13,7 +13,7 @@ const Faq = () => {
 
     <div className="md:w-1/2">
         <div className="mb-8 flex justify-start items-center">
-            <p className="lg:text-6xl md:text-4xl text-3xl font-bold text-[#050233]  pl-2">Important FAQ</p>
+            <p className="lg:text-6xl md:text-3xl text-3xl font-bold text-[#050233]  pl-2">Important FAQ</p>
             <img className="md:w-20 w-12" src="assets/faq.gif" alt=""/>
         </div>
 
