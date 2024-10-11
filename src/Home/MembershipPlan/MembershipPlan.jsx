@@ -88,7 +88,7 @@ const MembershipPlan = () => {
       {showPlans ? ( // Show plans only if showPlans is true
         <div className=" py-12 container mx-auto">
           <div className="text-center">
-            <h1 className="md:text-6xl text-4xl font-bold text-gray-800">Membership Plans</h1>
+            <h1 className="md:text-6xl text-4xl font-bold text-[#0D2E4E]">Membership Plans</h1>
             <p className="text-gray-600 mt-6 max-sm:px-8 md:text-xl mb-10">We’re available on bKash, making payments easy and convenient for you. <br className="max-sm:hidden" /> So choose a plan that fits your healthcare needs.</p>
             <div className="divider  lg:px-44 md:px-28 px-8"></div>
           </div>
@@ -112,7 +112,7 @@ const MembershipPlan = () => {
                   <hr />
                   <ul className=" mt-5 px-5 space-y-2">
                     {plan.benefits.map((benefit, index) => (
-                      <li key={index} className="text-gray-600 flex text-left  gap-1 md:text-lg  ">
+                      <li key={index} className="text-gray-700 flex text-left  gap-1 md:text-lg  ">
                         <span className="w-4 h-4 inline-block left-3 rounded-full mr-3">✔</span>
                         {benefit}
                       </li>
@@ -135,13 +135,13 @@ const MembershipPlan = () => {
               <input type="checkbox" id="my-modal" className="modal-toggle" checked />
               <div className="modal">
                 <div className="modal-box">
-                  <h2 className="text-4xl text-center font-bold mb-4">Confirm Your Purchase</h2>
+                  <h2 className="text-4xl text-center text-[#0D2E4E] font-bold mb-4">Confirm Your Purchase</h2>
                   <p className="text-center text-lg">Are you sure you want to choose the {selectedPlan ? selectedPlan.name : ""} plan?</p>
                   <div className="modal-action flex justify-center items-center">
-                    <button className="border bg-pink-600 text-white rounded-lg py-3 px-6 text-2xl font-semibold" onClick={() => setIsModalOpen(false)}>
+                    <button className="border md:hover:scale-105 duration-[0.4s] bg-gradient-to-r from-pink-700 to-rose-600 text-white rounded-lg py-3 px-6 text-2xl font-semibold" onClick={() => setIsModalOpen(false)}>
                       Cancel
                     </button>
-                    <button className="border bg-blue-600 text-white rounded-lg py-3 px-6 text-2xl font-semibold" onClick={handleConfirmPurchase}>
+                    <button className="border md:hover:scale-105 duration-[0.4s] bg-gradient-to-r from-[#1e6fc0] to-[#0D2E4E] text-white rounded-lg py-3 px-6 text-2xl font-semibold" onClick={handleConfirmPurchase}>
                       Confirm
                     </button>
                   </div>
@@ -157,10 +157,10 @@ const MembershipPlan = () => {
               <input type="checkbox" id="congrats-modal" className="modal-toggle" checked />
               <div className="modal">
                 <div className="modal-box">
-                  <h2 className="text-4xl text-center font-bold  mb-4">Congratulations!</h2>
+                  <h2 className="text-4xl text-[#0D2E4E] text-center font-bold  mb-4">Congratulations!</h2>
                   <p className="text-center text-lg md:text-xl">You have successfully chosen the {selectedPlan ? selectedPlan.name : ""} plan!</p>
                   <div className="modal-action flex justify-center items-center">
-                    <button className="border bg-green-600 text-white rounded-lg py-3 px-6 text-2xl font-semibold" onClick={handleCloseCongratsModal}>
+                    <button className="border md:hover:scale-105 duration-[0.4s] bg-gradient-to-r from-[#52c235] to-[#009921] text-white rounded-lg py-3 px-6 text-2xl font-semibold" onClick={handleCloseCongratsModal}>
                       Close Confirmation
                     </button>
                   </div>
@@ -173,7 +173,7 @@ const MembershipPlan = () => {
 
       {showCongratsSection && (
   
-        <div className="bg-gradient-to-r from-blue-500 to-teal-400 py-16 px-8 md:px-16 w-11/12 md:w-3/5 text-center rounded-3xl shadow-lg mx-auto mt-12">
+        <div className="bg-gradient-to-r from-[#1e6fc0] to-[#0D2E4E] py-16 px-8 md:px-16 w-11/12 md:w-3/5 text-center rounded-3xl shadow-lg mx-auto mt-12">
   <div className="flex justify-center items-center mb-6">
     <svg
       xmlns="http://www.w3.org/2000/svg"

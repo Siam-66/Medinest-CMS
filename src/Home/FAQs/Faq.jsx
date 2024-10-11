@@ -19,7 +19,7 @@ const Faq = () => {
 
         <div className="collapse collapse-arrow bg-base-200 mb-1">
             <input type="radio" name="my-accordion-2" defaultChecked />
-            <div className="collapse-title lg:text-3xl text-lg font-medium">What services does MediNest offer?
+            <div className="collapse-title text-[#0D2E4E] lg:text-3xl text-lg font-medium">What services does MediNest offer?
             </div>
             <div className="collapse-content">
             <div className="divider"></div>
@@ -31,7 +31,7 @@ const Faq = () => {
 
         <div className="collapse collapse-arrow bg-base-200 mb-1">
             <input type="radio" name="my-accordion-2" />
-            <div className="collapse-title lg:text-3xl text-lg  font-medium">What should I bring to my doctor’s appointment?
+            <div className="collapse-title text-[#0D2E4E] lg:text-3xl text-lg  font-medium">What should I bring to my doctor’s appointment?
             </div>
             <div className="collapse-content">
             <div className="divider"></div>
@@ -41,7 +41,7 @@ const Faq = () => {
 
         <div className="collapse collapse-arrow bg-base-200 mb-1">
             <input type="radio" name="my-accordion-2" />
-            <div className="collapse-title lg:text-3xl text-lg font-medium">What benefits do the membership plans offer?
+            <div className="collapse-title text-[#0D2E4E] lg:text-3xl text-lg font-medium">What benefits do the membership plans offer?
             </div>
             <div className="collapse-content">
             <div className="divider"></div>
@@ -52,7 +52,7 @@ const Faq = () => {
 
         <div className="collapse collapse-arrow bg-base-200 mb-1">
             <input type="radio" name="my-accordion-2" />
-            <div className="collapse-title lg:text-3xl text-lg font-medium">Do you accept health insurance?
+            <div className="collapse-title text-[#0D2E4E] lg:text-3xl text-lg font-medium">Do you accept health insurance?
             </div>
             <div className="collapse-content">
             <div className="divider"></div>
@@ -62,7 +62,7 @@ const Faq = () => {
 
         <div className="collapse collapse-arrow bg-base-200 mb-1">
             <input type="radio" name="my-accordion-2" />
-            <div className="collapse-title lg:text-3xl text-lg font-medium">What safety measures are the clinics and partners following?
+            <div className="collapse-title text-[#0D2E4E] lg:text-3xl text-lg font-medium">What safety measures are the clinics and partners following?
             </div>
             <div className="collapse-content">
             <div className="divider"></div>

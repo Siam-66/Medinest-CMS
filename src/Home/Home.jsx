@@ -31,7 +31,7 @@ const Home = () => {
         <Clinics></Clinics>
         
         */}
- 
+
 
         <AboutMdei></AboutMdei>
         <OurServices></OurServices>
