@@ -19,7 +19,7 @@ const DonateBlood = () => {
       Be a Hero. Donate Blood. Save Lives.
     </h2>
     <p className="text-lg font-medium mb-8">
-      Join our blood donation movement and make a life-saving difference. Your blood can give someone a second chance at life.
+      Join our blood donation movement and make a life-saving difference. <br className='lg:hidden max-sm:hidden' />Your blood can give someone a second chance at life.
     </p>
 
     {/* Call-to-Action Button */}

@@ -13,14 +13,17 @@ const MembershipPlan = () => {
       price: "0",
       duration: "PER MONTH",
       benefits: [
-        "Users can search for doctors and clinics",
-        "One free consultation per month with a general practitioner",
         "Basic Support via Email",
+        "One free consultation per month with a general practitioner",
+        "Users can easily search for doctors and clinics whenever he wants ",
+        "Users can order medicine or medical equipment at any time",
+        "Users can access the blood bank and blood donation service",
+        
       ],
     },
     {
       name: "Basic",
-      price: "399",
+      price: "499",
       duration: "PER MONTH",
       cashback: "50TK",
       image: "https://i.ibb.co.com/LN48nhM/25-removebg-preview.png",
@@ -35,7 +38,7 @@ const MembershipPlan = () => {
     },
     {
       name: "Premium",
-      price: "799",
+      price: "999",
       duration: "PER MONTH",
       cashback: "100TK",
       image: "https://i.ibb.co.com/LN48nhM/25-removebg-preview.png",
@@ -51,7 +54,7 @@ const MembershipPlan = () => {
     },
     {
       name: "Family Plan",
-      price: "1499",
+      price: "1599",
       duration: "PER MONTH",
       cashback: "150TK",
       image: "https://i.ibb.co.com/LN48nhM/25-removebg-preview.png",
@@ -90,10 +93,10 @@ const MembershipPlan = () => {
           <div className="text-center">
             <h1 className="md:text-6xl text-4xl font-bold text-[#0D2E4E]">Membership Plans</h1>
             <p className="text-gray-600 mt-6 max-sm:px-8 md:text-xl mb-10">We’re available on bKash, making payments easy and convenient for you. <br className="max-sm:hidden" /> So choose a plan that fits your healthcare needs.</p>
-            <div className="divider  lg:px-44 md:px-28 px-8"></div>
+            <div className="divider   max-sm:px-20"></div>
           </div>
 
-          <div className=" grid md:grid-cols-2 lg:grid-cols-4 max-sm:px-20 md:gap-[55px] gap-9 mt-16">
+          <div className=" grid md:grid-cols-2 lg:grid-cols-4 max-sm:px-20 md:gap-[55px] gap-12 mt-10">
             {plans.map((plan, index) => (
               <div key={index} className="bg-white shadow-lg  rounded-b-3xl text-center flex flex-col justify-between">
                 <div>
@@ -106,14 +109,14 @@ const MembershipPlan = () => {
 
                   <h2 className="md:text-4xl text-3xl mb-5 font-bold text-[#0D2E4E]">{plan.name}</h2>
                   <div>
-                    {plan.cashback?<p className="text-lg mb-4  ">Pay with<span className="text-rose-600 font-extrabold "> b</span><span className="font-extrabold">Kash</span> to get <span className="text-[#2ECC71] font-bold">{plan.cashback}</span> cashback! </p>:<p className="text-lg mb-4"> <span className="text-[#0D2E4E] font-bold ">Upgrade to enjoy</span> <span className="text-[#2ECC71] font-bold ">exclusive services!</span> </p>}
+                    {plan.cashback?<p className="text-lg mb-4 px-4 font-semibold text-[#0D2E4E] "> <span className="text-rose-600 font-extrabold "> b</span><span className="font-extrabold text-[#0D2E4E] ">Kash</span> cashback on first subscription — Get <span className="text-[#2ECC71] font-bold">{plan.cashback}</span>!</p>:<p className="text-lg mb-4"> <span className="text-[#0D2E4E] font-bold ">Upgrade and enjoy  all of our other </span> <span className="text-[#2ECC71] font-bold ">exclusive services</span>!</p>}
                   </div>
                   
                   <hr />
                   <ul className=" mt-5 px-5 space-y-2">
                     {plan.benefits.map((benefit, index) => (
                       <li key={index} className="text-gray-700 flex text-left  gap-1 md:text-lg  ">
-                        <span className="w-4 h-4 inline-block left-3 rounded-full mr-3">✔</span>
+                        <span className="w-4 h-4 inline-block left-3  rounded-full mr-3">✔</span>
                         {benefit}
                       </li>
                     ))}
