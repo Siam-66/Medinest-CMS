@@ -54,7 +54,7 @@ const MembershipPlan = () => {
     },
     {
       name: "Family Plan",
-      price: "1599",
+      price: "1499",
       duration: "PER MONTH",
       cashback: "150TK",
       image: "https://i.ibb.co.com/LN48nhM/25-removebg-preview.png",
@@ -93,7 +93,7 @@ const MembershipPlan = () => {
           <div className="text-center">
             <h1 className="md:text-6xl text-4xl font-bold text-[#0D2E4E]">Membership Plans</h1>
             <p className="text-gray-600 mt-6 max-sm:px-8 md:text-xl mb-10">We’re available on bKash, making payments easy and convenient for you. <br className="max-sm:hidden" /> So choose a plan that fits your healthcare needs.</p>
-            <div className="divider   max-sm:px-20"></div>
+            <div className="divider max-sm:px-20"></div>
           </div>
 
           <div className=" grid md:grid-cols-2 lg:grid-cols-4 max-sm:px-20 md:gap-[55px] gap-12 mt-10">
