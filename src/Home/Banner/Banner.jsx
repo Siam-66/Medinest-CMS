@@ -34,7 +34,7 @@ const Banner = () => {
             <div className="absolute inset-0 bg-black bg-opacity-60 md:h-[600px] w-full h-[600px] z-10"></div>
             <div className="absolute inset-0 flex flex-col justify-center items-center mt-14 z-20 top-[200px]  md:top-[250px] ">
                 <h1 className="md:text-6xl text-4xl font-bold text-white">Welcome to MediNest</h1>
-                <p className="mt-4 md:text-2xl text-xl text-white mb-5">Nurturing wellness with love and expertise</p>
+                <p className="mt-4 md:text-2xl text-xl text-white mb-5">The Nest for All Your Medical Needs</p>
                 <Link to="/" className='mt-2 text-white hover:scale-105 duration-[0.3s] md:text-4xl text-3xl border-2 p-3 rounded-2xl'>Our Services</Link>
             </div>
             <button 
